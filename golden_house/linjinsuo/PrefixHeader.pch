@@ -1,0 +1,79 @@
+//
+//  PrefixHeader.pch
+//  linjinsuo
+//
+//  Created by admin on 2018/3/7.
+//  Copyright © 2018年 admin. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+#import "UILabel+Extension.h"
+#import "Color.h"
+#import "Keychain.h"
+#import "WidthAndHeight.h"
+#import "CommonMacro.h"
+#import "HttpRequst.h"
+#import "UIColor+JMExtension.h"
+#import "MJChiBaoZiFooter.h"
+#import "HDNetworking.h"
+
+#import "MJRefresh.h"
+#import <YYKit/YYKit.h>
+#import "UIView+Extension.h"
+#import "NoDataView.h"
+#import "ErrorModel.h"
+#import "MJExtension.h"
+#import "UIView+HXExtension.h"
+#import "UIImageView+WebCache.h"
+#import <UMMobClick/MobClick.h>
+#import <UMSocialCore/UMSocialCore.h>
+#import "AFNetworking.h"
+#import "UIButton+touch.h"
+#import "IQKeyboardManager.h"
+
+#import "UIFactory.h"
+
+#import "UIView+Tap.h"
+#import "UIView+MJAlertView.h"
+
+#import "Util.h"
+#import "Regular.h"    // 正则
+
+
+
+/***********  iconFont ***************/
+#import "TBCityIconFont.h"
+#import "UIImage+TBCityIconFont.h"
+// IconFont
+#define LHIconInfoMake(text, imageSize, imageColor) [TBCityIconInfo iconInfoWithText:text size:imageSize color:imageColor]
+#define LHIconImageInfoMake(text, imageSize, imageColor)    [UIImage iconWithInfo:LHIconInfoMake(text, imageSize, imageColor)]
+#define LHIconFont(x)   [UIFont fontWithName:@"iconfont" size:x]
+
+
+
+
+
+//#ifdef DEBUG
+//#define NSLog(...) NSLog(__VA_ARGS__)
+//#define debugMethod() NSLog(@"%s", __func__)
+//#else
+//#define NSLog(...)
+//#define debugMethod()
+//#endif
+
+
+//  log输出   realse 打开屏蔽掉
+//#ifdef DEBUG
+#define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+//#else
+//#define NSLog(...)
+//#endif
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#endif /* PrefixHeader_pch */
