@@ -529,13 +529,6 @@
 			path = ORCodeView;
 			sourceTree = "<group>";
 		};
-		04E49DC421818B640092AFB9 /* 分段控制 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "分段控制";
-			sourceTree = "<group>";
-		};
 		8414DB31205208CA0060FFD7 /* EmptyView */ = {
 			isa = PBXGroup;
 			children = (
@@ -678,7 +671,6 @@
 		8457D799204F6F58002FF42A /* Tool class */ = {
 			isa = PBXGroup;
 			children = (
-				04E49DC421818B640092AFB9 /* 分段控制 */,
 				04E49DA021816C990092AFB9 /* 二维码扫描位置可调 */,
 				04E49D982181659F0092AFB9 /* 提示框 */,
 				0406B81121815DC6006CED81 /* 照片拍照自定义裁剪 */,

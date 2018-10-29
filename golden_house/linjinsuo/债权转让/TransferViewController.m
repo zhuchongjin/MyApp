@@ -21,77 +21,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    _forumListArray = [NSMutableArray arrayWithCapacity:0];
     [self setTitleName:@"债权转让"];
-//    [self createTableView];
-//    RegisterNotify(BUYFIXD,  @selector(notifyMethod:));
-    // Do any additional setup after loading the view.
-    
     [self checkNetWork];
-    
-    
-    
-//
-//    UILabel * label = [[UILabel alloc] initWithFrame:self.view.bounds];
-//    UIFont *iconfont = [UIFont fontWithName:@"iconfont" size: 36];
-//    label.font = iconfont;
-//    //e6c7
-//    label.text = @"\U0000e6c6 \U0000e6c7";//\U00003439
-//    label.textColor = [UIColor redColor];
-//    [self.view addSubview: label];
-//
+
 }
-//
-//-(void)notifyMethod:(NSNotification*)notifications
-//{
-//    if ([[notifications name] isEqualToString:BUYFIXD]) {
-//        [self.tableView.mj_header beginRefreshing];
-//    }
-//
-//}
-//
-//-(void)createTableView
-//{
-//    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, topHeight, SCREEN_WIDTH, SCREEN_HEIGHT-SafeAreaBottomHeight-topHeight) style:UITableViewStyleGrouped];
-//    tableView.dataSource = self;
-//    tableView.delegate = self;
-//    tableView.backgroundColor =LHWhiteColor;
-//    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-//    [tableView setSeparatorInset:UIEdgeInsetsMake(0,0,0,0)];
-//    if (DeviceSystemVersion.doubleValue >= 11.0) {
-//        tableView.estimatedRowHeight = 0;
-//        tableView.estimatedSectionHeaderHeight = 0;
-//        tableView.estimatedSectionFooterHeight = 0;
-//    }
-//    [self.tableView setSeparatorColor:LHBackgroundColor];
-//    tableView.contentInset = UIEdgeInsetsMake(0, 0, 45+SafeAreaBottomHeight, 0);
-//    tableView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 45+SafeAreaBottomHeight, 0);
-//    tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
-//    [self.view addSubview:tableView];
-//    self.tableView = tableView;
-//
-//    MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshList)];
-//    [header setTitle:@"释放更新" forState:MJRefreshStatePulling];
-//    [header setTitle:@"正在更新" forState:MJRefreshStateRefreshing];
-//    [header setTitle:@"下拉刷新" forState:MJRefreshStateIdle];
-//    header.stateLabel.font = [UIFont systemFontOfSize:13];
-//    header.stateLabel.textColor = ThemeTextColor;
-//    header.lastUpdatedTimeLabel.hidden = YES;
-//
-//    tableView.mj_header = header;
-//
-//    MJChiBaoZiFooter *footer = [MJChiBaoZiFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
-//    self.tableView.mj_footer = footer;
-//    [self.tableView.mj_footer resetNoMoreData];
-//
-//    [footer setTitle:@"" forState:MJRefreshStateIdle];
-//    [footer setTitle:@"没有更多了~" forState:MJRefreshStateNoMoreData];
-//    [footer setTitle:@"加载中..." forState:MJRefreshStateRefreshing];
-//    footer.stateLabel.textColor = RGB(90, 90, 90);
-//    footer.stateLabel.font = LHTitleFont13;
-//    footer.backgroundColor = UIColorClear;
-//    [self checkNetWork];
-//}
+
 -(void)checkNetWork
 {
     // 创建网络监测者
@@ -128,20 +62,7 @@
 //    [self gotoPage:(_forumListArray.count / 10)+1];
 //}
 //-(void)gotoPage:(NSUInteger)page
-//{
-//    NSString * url;
-//
-//    NSMutableDictionary * postDic = [[NSMutableDictionary alloc]initWithCapacity:3];
-//    NSNumber *  count= __INT(page);
-//    [self.param setObject:count.stringValue forKey:@"currentPage"];
-//    [self.param setObject:@"10" forKey:@"showCount"];
-//    NSMutableDictionary * padss = [[NSMutableDictionary alloc]initWithCapacity:3];
-//
-//    [self.BodyDic setObject:padss forKey:@"param"];
-//    [self.BodyDic setObject:self.param forKey:@"page"];
-//    [self.psddDic setObject:@"getCanDebtPageList" forKey:@"serviceCode"];
-//    [postDic setObject:self.psddDic forKey:@"Head"];
-//    [postDic setObject:self.BodyDic forKey:@"Body"];
+
 //
 //    url =    [self urldecode:postDic];
 //    url = [NSString stringWithFormat:@"%@%@",MainUrl,url];
