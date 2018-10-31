@@ -45,6 +45,7 @@
 		048B8674217EA84F003B849F /* TBCityIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B866E217EA84F003B849F /* TBCityIconFont.m */; };
 		048B8675217EA84F003B849F /* TBCityIconInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B866F217EA84F003B849F /* TBCityIconInfo.m */; };
 		048B8676217EA84F003B849F /* UIImage+TBCityIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B8670217EA84F003B849F /* UIImage+TBCityIconFont.m */; };
+		04E0540A2189A46A00EFD3CE /* GetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E054082189A46A00EFD3CE /* GetVC.m */; };
 		04E49D9E218165DA0092AFB9 /* ARToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E49D9A218165DA0092AFB9 /* ARToastView.m */; };
 		04E49D9F218165DA0092AFB9 /* UIView+MJAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E49D9B218165DA0092AFB9 /* UIView+MJAlertView.m */; };
 		04E49DB421816C990092AFB9 /* frame_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04E49DA221816C990092AFB9 /* frame_icon@2x.png */; };
@@ -192,6 +193,8 @@
 		048B8671217EA84F003B849F /* TBCityIconInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityIconInfo.h; sourceTree = "<group>"; };
 		048B8672217EA84F003B849F /* TBCityIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityIconFont.h; sourceTree = "<group>"; };
 		048B8673217EA84F003B849F /* UIImage+TBCityIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TBCityIconFont.h"; sourceTree = "<group>"; };
+		04E054082189A46A00EFD3CE /* GetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetVC.m; sourceTree = "<group>"; };
+		04E054092189A46A00EFD3CE /* GetVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetVC.h; sourceTree = "<group>"; };
 		04E49D9A218165DA0092AFB9 /* ARToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARToastView.m; sourceTree = "<group>"; };
 		04E49D9B218165DA0092AFB9 /* UIView+MJAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJAlertView.m"; sourceTree = "<group>"; };
 		04E49D9C218165DA0092AFB9 /* ARToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARToastView.h; sourceTree = "<group>"; };
@@ -470,6 +473,15 @@
 			path = IconFont;
 			sourceTree = "<group>";
 		};
+		04E054072189A46A00EFD3CE /* 找到控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				04E054082189A46A00EFD3CE /* GetVC.m */,
+				04E054092189A46A00EFD3CE /* GetVC.h */,
+			);
+			path = "找到控制器";
+			sourceTree = "<group>";
+		};
 		04E49D982181659F0092AFB9 /* 提示框 */ = {
 			isa = PBXGroup;
 			children = (
@@ -671,6 +683,7 @@
 		8457D799204F6F58002FF42A /* Tool class */ = {
 			isa = PBXGroup;
 			children = (
+				04E054072189A46A00EFD3CE /* 找到控制器 */,
 				04E49DA021816C990092AFB9 /* 二维码扫描位置可调 */,
 				04E49D982181659F0092AFB9 /* 提示框 */,
 				0406B81121815DC6006CED81 /* 照片拍照自定义裁剪 */,
@@ -1117,6 +1130,7 @@
 				C55B8A90207CB15D00DCAF7D /* Regular.m in Sources */,
 				04E49DC021816C990092AFB9 /* LWQRCodeBackgroundView.m in Sources */,
 				8414DB34205208CB0060FFD7 /* NoDataView.m in Sources */,
+				04E0540A2189A46A00EFD3CE /* GetVC.m in Sources */,
 				048B8676217EA84F003B849F /* UIImage+TBCityIconFont.m in Sources */,
 				04E49E0B2181B47A0092AFB9 /* ViewTapVC.m in Sources */,
 				84212DFD204E963200EAE58E /* HDPicModle.m in Sources */,
