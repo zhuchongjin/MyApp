@@ -9,5 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface GetVC : NSObject
+
+
+/**
+ 在NSobect中 找到当前VC
+
+ @return <#return value description#>
+ */
 + (UIViewController *)getCurrentVC;
 @end

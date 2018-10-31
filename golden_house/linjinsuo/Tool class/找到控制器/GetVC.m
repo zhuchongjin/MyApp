@@ -14,7 +14,8 @@
      UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
      
      UIViewController *currentVC = [GetVC getCurrentVCFrom:rootViewController];
-     
+    
+    
      return currentVC;
 }
 
