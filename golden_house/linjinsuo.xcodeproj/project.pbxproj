@@ -41,6 +41,17 @@
 		0406B84321815E4D006CED81 /* surePhoto@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0406B82A21815E4C006CED81 /* surePhoto@3x.png */; };
 		0406B84421815E4D006CED81 /* TKImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406B82D21815E4C006CED81 /* TKImageView.m */; };
 		0406B84721815EA7006CED81 /* CameraVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406B84621815EA7006CED81 /* CameraVC.m */; };
+		04323688218AEE620049C358 /* AssetsTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 04323687218AEE620049C358 /* AssetsTableViewDataSource.m */; };
+		0432368B218AEF6E0049C358 /* AssetsTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0432368A218AEF6E0049C358 /* AssetsTableViewDelegate.m */; };
+		0432368E218AF6560049C358 /* TableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0432368D218AF6560049C358 /* TableViewModel.m */; };
+		04323691218BF0080049C358 /* RadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04323690218BF0080049C358 /* RadioButton.m */; };
+		04323694218BF0630049C358 /* SingleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04323693218BF0630049C358 /* SingleVC.m */; };
+		0432369F218C1DCE0049C358 /* RadioButton-Unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 0432369C218C1DCE0049C358 /* RadioButton-Unselected.png */; };
+		043236A0218C1DCE0049C358 /* RadioButton-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 0432369D218C1DCE0049C358 /* RadioButton-Selected.png */; };
+		043236A1218C1DCE0049C358 /* GZFRadioCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0432369E218C1DCE0049C358 /* GZFRadioCheckBox.m */; };
+		04345C502192C4E1005F5765 /* SYBigImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04345C4E2192C4E0005F5765 /* SYBigImage.m */; };
+		04345C572192C5BF005F5765 /* BigImgVVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04345C552192C5BF005F5765 /* BigImgVVC.m */; };
+		04345C582192C5BF005F5765 /* BigImgVVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04345C562192C5BF005F5765 /* BigImgVVC.xib */; };
 		0465457621804EC900F731D1 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0465457521804EC900F731D1 /* iconfont.ttf */; };
 		048B8674217EA84F003B849F /* TBCityIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B866E217EA84F003B849F /* TBCityIconFont.m */; };
 		048B8675217EA84F003B849F /* TBCityIconInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B866F217EA84F003B849F /* TBCityIconInfo.m */; };
@@ -186,6 +197,25 @@
 		0406B82D21815E4C006CED81 /* TKImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKImageView.m; sourceTree = "<group>"; };
 		0406B84521815EA7006CED81 /* CameraVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraVC.h; sourceTree = "<group>"; };
 		0406B84621815EA7006CED81 /* CameraVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraVC.m; sourceTree = "<group>"; };
+		04323686218AEE620049C358 /* AssetsTableViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsTableViewDataSource.h; sourceTree = "<group>"; };
+		04323687218AEE620049C358 /* AssetsTableViewDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsTableViewDataSource.m; sourceTree = "<group>"; };
+		04323689218AEF6E0049C358 /* AssetsTableViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetsTableViewDelegate.h; sourceTree = "<group>"; };
+		0432368A218AEF6E0049C358 /* AssetsTableViewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetsTableViewDelegate.m; sourceTree = "<group>"; };
+		0432368C218AF6560049C358 /* TableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewModel.h; sourceTree = "<group>"; };
+		0432368D218AF6560049C358 /* TableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewModel.m; sourceTree = "<group>"; };
+		0432368F218BF0070049C358 /* RadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioButton.h; sourceTree = "<group>"; };
+		04323690218BF0080049C358 /* RadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioButton.m; sourceTree = "<group>"; };
+		04323692218BF0630049C358 /* SingleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleVC.h; sourceTree = "<group>"; };
+		04323693218BF0630049C358 /* SingleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleVC.m; sourceTree = "<group>"; };
+		0432369A218C1DCE0049C358 /* GZFRadioCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZFRadioCheckBox.h; sourceTree = "<group>"; };
+		0432369C218C1DCE0049C358 /* RadioButton-Unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RadioButton-Unselected.png"; sourceTree = "<group>"; };
+		0432369D218C1DCE0049C358 /* RadioButton-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RadioButton-Selected.png"; sourceTree = "<group>"; };
+		0432369E218C1DCE0049C358 /* GZFRadioCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZFRadioCheckBox.m; sourceTree = "<group>"; };
+		04345C4E2192C4E0005F5765 /* SYBigImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYBigImage.m; sourceTree = "<group>"; };
+		04345C4F2192C4E1005F5765 /* SYBigImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYBigImage.h; sourceTree = "<group>"; };
+		04345C542192C5BF005F5765 /* BigImgVVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BigImgVVC.h; sourceTree = "<group>"; };
+		04345C552192C5BF005F5765 /* BigImgVVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BigImgVVC.m; sourceTree = "<group>"; };
+		04345C562192C5BF005F5765 /* BigImgVVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigImgVVC.xib; sourceTree = "<group>"; };
 		0465457521804EC900F731D1 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		048B866E217EA84F003B849F /* TBCityIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityIconFont.m; sourceTree = "<group>"; };
 		048B866F217EA84F003B849F /* TBCityIconInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityIconInfo.m; sourceTree = "<group>"; };
@@ -449,6 +479,34 @@
 			path = image;
 			sourceTree = "<group>";
 		};
+		04323699218C1DCE0049C358 /* 单选按钮(RadioCheckBox) */ = {
+			isa = PBXGroup;
+			children = (
+				0432369A218C1DCE0049C358 /* GZFRadioCheckBox.h */,
+				0432369B218C1DCE0049C358 /* img */,
+				0432369E218C1DCE0049C358 /* GZFRadioCheckBox.m */,
+			);
+			path = "单选按钮(RadioCheckBox)";
+			sourceTree = "<group>";
+		};
+		0432369B218C1DCE0049C358 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				0432369C218C1DCE0049C358 /* RadioButton-Unselected.png */,
+				0432369D218C1DCE0049C358 /* RadioButton-Selected.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		04345C4D2192C49F005F5765 /* 图片点击放大所辖 */ = {
+			isa = PBXGroup;
+			children = (
+				04345C4F2192C4E1005F5765 /* SYBigImage.h */,
+				04345C4E2192C4E0005F5765 /* SYBigImage.m */,
+			);
+			path = "图片点击放大所辖";
+			sourceTree = "<group>";
+		};
 		048B866C217EA82D003B849F /* iconFont */ = {
 			isa = PBXGroup;
 			children = (
@@ -658,6 +716,12 @@
 			children = (
 				843D6E80204FCD1A004AC950 /* AssetsListViewController.h */,
 				843D6E81204FCD1A004AC950 /* AssetsListViewController.m */,
+				04323686218AEE620049C358 /* AssetsTableViewDataSource.h */,
+				04323687218AEE620049C358 /* AssetsTableViewDataSource.m */,
+				04323689218AEF6E0049C358 /* AssetsTableViewDelegate.h */,
+				0432368A218AEF6E0049C358 /* AssetsTableViewDelegate.m */,
+				0432368C218AF6560049C358 /* TableViewModel.h */,
+				0432368D218AF6560049C358 /* TableViewModel.m */,
 			);
 			path = "投资理财";
 			sourceTree = "<group>";
@@ -683,6 +747,10 @@
 		8457D799204F6F58002FF42A /* Tool class */ = {
 			isa = PBXGroup;
 			children = (
+				04345C4D2192C49F005F5765 /* 图片点击放大所辖 */,
+				04323699218C1DCE0049C358 /* 单选按钮(RadioCheckBox) */,
+				0432368F218BF0070049C358 /* RadioButton.h */,
+				04323690218BF0080049C358 /* RadioButton.m */,
 				04E054072189A46A00EFD3CE /* 找到控制器 */,
 				04E49DA021816C990092AFB9 /* 二维码扫描位置可调 */,
 				04E49D982181659F0092AFB9 /* 提示框 */,
@@ -710,6 +778,11 @@
 				843D6E84204FCD29004AC950 /* HomeViewController.m */,
 				04E49E092181B47A0092AFB9 /* ViewTapVC.h */,
 				04E49E0A2181B47A0092AFB9 /* ViewTapVC.m */,
+				04323692218BF0630049C358 /* SingleVC.h */,
+				04323693218BF0630049C358 /* SingleVC.m */,
+				04345C542192C5BF005F5765 /* BigImgVVC.h */,
+				04345C552192C5BF005F5765 /* BigImgVVC.m */,
+				04345C562192C5BF005F5765 /* BigImgVVC.xib */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -1023,6 +1096,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043236A0218C1DCE0049C358 /* RadioButton-Selected.png in Resources */,
 				0406B84221815E4D006CED81 /* backPhoto@2x.png in Resources */,
 				04E49DBD21816C990092AFB9 /* line.png in Resources */,
 				0406B83421815E4C006CED81 /* takePhoto@2x.png in Resources */,
@@ -1034,6 +1108,7 @@
 				04E49DBA21816C990092AFB9 /* ScanQR4@2x.png in Resources */,
 				0406B83521815E4D006CED81 /* sureCamera@2x.png in Resources */,
 				0406B83221815E4C006CED81 /* cancleCamera@3x.png in Resources */,
+				04345C582192C5BF005F5765 /* BigImgVVC.xib in Resources */,
 				04E49DB921816C990092AFB9 /* line@2x.png in Resources */,
 				0406B83321815E4C006CED81 /* canclePhoto@3x.png in Resources */,
 				0406B83A21815E4D006CED81 /* openFlish@2x.png in Resources */,
@@ -1042,6 +1117,7 @@
 				84D94B03204E2DEB00A295B3 /* LaunchScreen.storyboard in Resources */,
 				0406B83121815E4C006CED81 /* openFlish@3x.png in Resources */,
 				04E49DB721816C990092AFB9 /* frame_icon.png in Resources */,
+				0432369F218C1DCE0049C358 /* RadioButton-Unselected.png in Resources */,
 				04E49DC321818A830092AFB9 /* OC代码规范总结.md in Resources */,
 				0406B83F21815E4D006CED81 /* closeFlish@2x.png in Resources */,
 				04E49DBC21816C990092AFB9 /* ScanQR2@2x.png in Resources */,
@@ -1138,9 +1214,11 @@
 				04E49D9E218165DA0092AFB9 /* ARToastView.m in Sources */,
 				0406B84421815E4D006CED81 /* TKImageView.m in Sources */,
 				C55B8A81207C6A9E00DCAF7D /* Util.m in Sources */,
+				04323691218BF0080049C358 /* RadioButton.m in Sources */,
 				84B9DF6E2058AE0D00B554E7 /* UIImage+HDExtension.m in Sources */,
 				843D6E88204FCD40004AC950 /* TransferViewController.m in Sources */,
 				C55B8A84207C6A9E00DCAF7D /* GetPhoto.m in Sources */,
+				04345C502192C4E1005F5765 /* SYBigImage.m in Sources */,
 				84191BA3205750F600DBA00F /* TAAbstractDotView.m in Sources */,
 				0406B80E2181591E006CED81 /* UIView+UIView_Factory.m in Sources */,
 				0406B80A2181591E006CED81 /* UILabel+UILabel_Factory.m in Sources */,
@@ -1151,6 +1229,7 @@
 				858434C420842C7200C4C114 /* NewWebViewController.m in Sources */,
 				84D94AFB204E2DEB00A295B3 /* ViewController.m in Sources */,
 				855C68A2209B02DD00D17990 /* GuidPageControlView.m in Sources */,
+				04345C572192C5BF005F5765 /* BigImgVVC.m in Sources */,
 				048B8675217EA84F003B849F /* TBCityIconInfo.m in Sources */,
 				843D6E8B204FCD4F004AC950 /* MineViewController.m in Sources */,
 				8457D79F204F7222002FF42A /* RootViewController.m in Sources */,
@@ -1164,6 +1243,7 @@
 				84191BA8205750F600DBA00F /* SDCycleScrollView.m in Sources */,
 				855C68A1209B02DD00D17990 /* JMGuidViewController.m in Sources */,
 				0406B84721815EA7006CED81 /* CameraVC.m in Sources */,
+				0432368B218AEF6E0049C358 /* AssetsTableViewDelegate.m in Sources */,
 				85EDDBA3207DE3D300E78B6D /* UILabel+YBAttributeTextTapAction.m in Sources */,
 				0406B7F621815888006CED81 /* VolumeChangeVC.m in Sources */,
 				0406B82F21815E4C006CED81 /* CameraViewController.m in Sources */,
@@ -1171,6 +1251,7 @@
 				0406B82E21815E4C006CED81 /* ClipViewController.m in Sources */,
 				852C3840207B5AED0088A812 /* UIButton+Addition.m in Sources */,
 				84191BA5205750F600DBA00F /* TADotView.m in Sources */,
+				043236A1218C1DCE0049C358 /* GZFRadioCheckBox.m in Sources */,
 				0406B8082181591E006CED81 /* BYFoundationLog.m in Sources */,
 				0406B80D2181591E006CED81 /* UIView+UITableView_Factory.m in Sources */,
 				84B9DF6F2058AE0D00B554E7 /* UILabel+Extension.m in Sources */,
@@ -1194,9 +1275,12 @@
 				84D94AF5204E2DEB00A295B3 /* main.m in Sources */,
 				0406B80F2181591E006CED81 /* UIButton+UIButton_Factory.m in Sources */,
 				8532875E2071CD39008C7A14 /* BaseTabViewController.m in Sources */,
+				04323688218AEE620049C358 /* AssetsTableViewDataSource.m in Sources */,
+				04323694218BF0630049C358 /* SingleVC.m in Sources */,
 				8588EAAA2080518A00C6FD16 /* UIButton+touch.m in Sources */,
 				843D6E82204FCD1A004AC950 /* AssetsListViewController.m in Sources */,
 				84191BA9205750F600DBA00F /* UIView+SDExtension.m in Sources */,
+				0432368E218AF6560049C358 /* TableViewModel.m in Sources */,
 				841FB7022068976900E06AC0 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				C5A0C8F92086C8C40027192B /* MyAlertView.m in Sources */,
 			);

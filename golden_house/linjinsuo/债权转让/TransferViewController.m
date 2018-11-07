@@ -23,6 +23,12 @@
     [super viewDidLoad];
     [self setTitleName:@"债权转让"];
     [self checkNetWork];
+    
+    [[HDNetworking sharedHDNetworking]POST:@"" parameters:nil success:^(id  _Nonnull responseObject) {
+        
+    } failure:^(NSError * _Nonnull error) {
+        
+    }];
 
 }
 

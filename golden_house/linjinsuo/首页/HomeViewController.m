@@ -13,6 +13,9 @@
 #import "CameraVC.h"
 #import "LWQRCodeViewController.h"
 #import "ViewTapVC.h"
+#import "SingleVC.h"
+#import "BigImgVVC.h"
+
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,NoDataViewTouchDelegate>
 {
@@ -113,6 +116,19 @@
             [self pushVc:vc];
 
             break;
+        case 8:
+            // UIview+tap
+            vc = [[SingleVC alloc]init];
+            [self pushVc:vc];
+            
+            break;
+            
+        case 9:
+            // UIview+tap
+            vc = [[BigImgVVC alloc]init];
+            [self pushVc:vc];
+            
+            break;
             
         default:
             break;
@@ -122,7 +138,7 @@
 #pragma make -------- 初始化
 - (NSArray *)arrTitles{
     if (!_arrTitles) {
-        _arrTitles = @[@"0 IconFont的用法",@"1 shareView分享",@"2 音声调节",@"3 相机拍照剪裁",@"4 提示框1",@"5 提示框2",@"6 二维码扫描扫描区域可调",@"7 UIview+tap 图片剪裁切割"];
+        _arrTitles = @[@"0 IconFont的用法",@"1 shareView分享",@"2 音声调节",@"3 相机拍照剪裁",@"4 提示框1",@"5 提示框2",@"6 二维码扫描扫描区域可调",@"7 UIview+tap 图片剪裁切割",@"单选按钮实现",@"图片点击放大缩小"];
     }
     return _arrTitles;
 }
