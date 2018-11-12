@@ -56,6 +56,14 @@
 		048B8674217EA84F003B849F /* TBCityIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B866E217EA84F003B849F /* TBCityIconFont.m */; };
 		048B8675217EA84F003B849F /* TBCityIconInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B866F217EA84F003B849F /* TBCityIconInfo.m */; };
 		048B8676217EA84F003B849F /* UIImage+TBCityIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B8670217EA84F003B849F /* UIImage+TBCityIconFont.m */; };
+		0496E7EB21996A73001FF76E /* PaiDanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496E7E921996A73001FF76E /* PaiDanVC.m */; };
+		0496E7EC21996A73001FF76E /* PaiDanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0496E7EA21996A73001FF76E /* PaiDanVC.xib */; };
+		0496E7EF21996AC8001FF76E /* PanDanListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496E7EE21996AC8001FF76E /* PanDanListVC.m */; };
+		0496E7F42199771D001FF76E /* YJSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496E7F32199771D001FF76E /* YJSegmentedControl.m */; };
+		0496E7F82199774E001FF76E /* SegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496E7F72199774E001FF76E /* SegmentViewController.m */; };
+		0496E800219986CA001FF76E /* LCUserDefaultsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496E7FB219986CA001FF76E /* LCUserDefaultsModel.m */; };
+		0496E801219986CA001FF76E /* UDUserDefaultsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496E7FF219986CA001FF76E /* UDUserDefaultsModel.m */; };
+		0496E8042199870D001FF76E /* LHUserDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496E8032199870D001FF76E /* LHUserDefaultViewController.m */; };
 		04E0540A2189A46A00EFD3CE /* GetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E054082189A46A00EFD3CE /* GetVC.m */; };
 		04E49D9E218165DA0092AFB9 /* ARToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E49D9A218165DA0092AFB9 /* ARToastView.m */; };
 		04E49D9F218165DA0092AFB9 /* UIView+MJAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E49D9B218165DA0092AFB9 /* UIView+MJAlertView.m */; };
@@ -223,6 +231,21 @@
 		048B8671217EA84F003B849F /* TBCityIconInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityIconInfo.h; sourceTree = "<group>"; };
 		048B8672217EA84F003B849F /* TBCityIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityIconFont.h; sourceTree = "<group>"; };
 		048B8673217EA84F003B849F /* UIImage+TBCityIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TBCityIconFont.h"; sourceTree = "<group>"; };
+		0496E7E821996A73001FF76E /* PaiDanVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaiDanVC.h; sourceTree = "<group>"; };
+		0496E7E921996A73001FF76E /* PaiDanVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaiDanVC.m; sourceTree = "<group>"; };
+		0496E7EA21996A73001FF76E /* PaiDanVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaiDanVC.xib; sourceTree = "<group>"; };
+		0496E7ED21996AC8001FF76E /* PanDanListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanDanListVC.h; sourceTree = "<group>"; };
+		0496E7EE21996AC8001FF76E /* PanDanListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanDanListVC.m; sourceTree = "<group>"; };
+		0496E7F22199771D001FF76E /* YJSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSegmentedControl.h; sourceTree = "<group>"; };
+		0496E7F32199771D001FF76E /* YJSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSegmentedControl.m; sourceTree = "<group>"; };
+		0496E7F62199774E001FF76E /* SegmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentViewController.h; sourceTree = "<group>"; };
+		0496E7F72199774E001FF76E /* SegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentViewController.m; sourceTree = "<group>"; };
+		0496E7FB219986CA001FF76E /* LCUserDefaultsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCUserDefaultsModel.m; sourceTree = "<group>"; };
+		0496E7FC219986CA001FF76E /* LCUserDefaultsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserDefaultsModel.h; sourceTree = "<group>"; };
+		0496E7FE219986CA001FF76E /* UDUserDefaultsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDUserDefaultsModel.h; sourceTree = "<group>"; };
+		0496E7FF219986CA001FF76E /* UDUserDefaultsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDUserDefaultsModel.m; sourceTree = "<group>"; };
+		0496E8022199870D001FF76E /* LHUserDefaultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHUserDefaultViewController.h; sourceTree = "<group>"; };
+		0496E8032199870D001FF76E /* LHUserDefaultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHUserDefaultViewController.m; sourceTree = "<group>"; };
 		04E054082189A46A00EFD3CE /* GetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetVC.m; sourceTree = "<group>"; };
 		04E054092189A46A00EFD3CE /* GetVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetVC.h; sourceTree = "<group>"; };
 		04E49D9A218165DA0092AFB9 /* ARToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARToastView.m; sourceTree = "<group>"; };
@@ -531,6 +554,73 @@
 			path = IconFont;
 			sourceTree = "<group>";
 		};
+		0496E7E721996A2F001FF76E /* 控制器分段控制 */ = {
+			isa = PBXGroup;
+			children = (
+				0496E7E821996A73001FF76E /* PaiDanVC.h */,
+				0496E7E921996A73001FF76E /* PaiDanVC.m */,
+				0496E7EA21996A73001FF76E /* PaiDanVC.xib */,
+				0496E7ED21996AC8001FF76E /* PanDanListVC.h */,
+				0496E7EE21996AC8001FF76E /* PanDanListVC.m */,
+			);
+			path = "控制器分段控制";
+			sourceTree = "<group>";
+		};
+		0496E7F0219976FD001FF76E /* 分段控制 */ = {
+			isa = PBXGroup;
+			children = (
+				0496E7F12199771D001FF76E /* YJSegmentedControl */,
+			);
+			path = "分段控制";
+			sourceTree = "<group>";
+		};
+		0496E7F12199771D001FF76E /* YJSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				0496E7F22199771D001FF76E /* YJSegmentedControl.h */,
+				0496E7F32199771D001FF76E /* YJSegmentedControl.m */,
+			);
+			path = YJSegmentedControl;
+			sourceTree = "<group>";
+		};
+		0496E7F521997727001FF76E /* 分段控制定义1 */ = {
+			isa = PBXGroup;
+			children = (
+				0496E7F62199774E001FF76E /* SegmentViewController.h */,
+				0496E7F72199774E001FF76E /* SegmentViewController.m */,
+			);
+			path = "分段控制定义1";
+			sourceTree = "<group>";
+		};
+		0496E7F921998688001FF76E /* 简单代替UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				0496E7FA219986CA001FF76E /* Demo-Objc */,
+				0496E7FD219986CA001FF76E /* iOS-Objc */,
+				0496E8022199870D001FF76E /* LHUserDefaultViewController.h */,
+				0496E8032199870D001FF76E /* LHUserDefaultViewController.m */,
+			);
+			path = "简单代替UserDefault";
+			sourceTree = "<group>";
+		};
+		0496E7FA219986CA001FF76E /* Demo-Objc */ = {
+			isa = PBXGroup;
+			children = (
+				0496E7FB219986CA001FF76E /* LCUserDefaultsModel.m */,
+				0496E7FC219986CA001FF76E /* LCUserDefaultsModel.h */,
+			);
+			path = "Demo-Objc";
+			sourceTree = "<group>";
+		};
+		0496E7FD219986CA001FF76E /* iOS-Objc */ = {
+			isa = PBXGroup;
+			children = (
+				0496E7FE219986CA001FF76E /* UDUserDefaultsModel.h */,
+				0496E7FF219986CA001FF76E /* UDUserDefaultsModel.m */,
+			);
+			path = "iOS-Objc";
+			sourceTree = "<group>";
+		};
 		04E054072189A46A00EFD3CE /* 找到控制器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -747,6 +837,7 @@
 		8457D799204F6F58002FF42A /* Tool class */ = {
 			isa = PBXGroup;
 			children = (
+				0496E7F0219976FD001FF76E /* 分段控制 */,
 				04345C4D2192C49F005F5765 /* 图片点击放大所辖 */,
 				04323699218C1DCE0049C358 /* 单选按钮(RadioCheckBox) */,
 				0432368F218BF0070049C358 /* RadioButton.h */,
@@ -774,6 +865,9 @@
 		8457D7A0204F750D002FF42A /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				0496E7F921998688001FF76E /* 简单代替UserDefault */,
+				0496E7F521997727001FF76E /* 分段控制定义1 */,
+				0496E7E721996A2F001FF76E /* 控制器分段控制 */,
 				843D6E83204FCD29004AC950 /* HomeViewController.h */,
 				843D6E84204FCD29004AC950 /* HomeViewController.m */,
 				04E49E092181B47A0092AFB9 /* ViewTapVC.h */,
@@ -1119,6 +1213,7 @@
 				04E49DB721816C990092AFB9 /* frame_icon.png in Resources */,
 				0432369F218C1DCE0049C358 /* RadioButton-Unselected.png in Resources */,
 				04E49DC321818A830092AFB9 /* OC代码规范总结.md in Resources */,
+				0496E7EC21996A73001FF76E /* PaiDanVC.xib in Resources */,
 				0406B83F21815E4D006CED81 /* closeFlish@2x.png in Resources */,
 				04E49DBC21816C990092AFB9 /* ScanQR2@2x.png in Resources */,
 				84D94B00204E2DEB00A295B3 /* Assets.xcassets in Resources */,
@@ -1203,6 +1298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0496E7F82199774E001FF76E /* SegmentViewController.m in Sources */,
 				C55B8A90207CB15D00DCAF7D /* Regular.m in Sources */,
 				04E49DC021816C990092AFB9 /* LWQRCodeBackgroundView.m in Sources */,
 				8414DB34205208CB0060FFD7 /* NoDataView.m in Sources */,
@@ -1214,6 +1310,7 @@
 				04E49D9E218165DA0092AFB9 /* ARToastView.m in Sources */,
 				0406B84421815E4D006CED81 /* TKImageView.m in Sources */,
 				C55B8A81207C6A9E00DCAF7D /* Util.m in Sources */,
+				0496E7F42199771D001FF76E /* YJSegmentedControl.m in Sources */,
 				04323691218BF0080049C358 /* RadioButton.m in Sources */,
 				84B9DF6E2058AE0D00B554E7 /* UIImage+HDExtension.m in Sources */,
 				843D6E88204FCD40004AC950 /* TransferViewController.m in Sources */,
@@ -1232,7 +1329,9 @@
 				04345C572192C5BF005F5765 /* BigImgVVC.m in Sources */,
 				048B8675217EA84F003B849F /* TBCityIconInfo.m in Sources */,
 				843D6E8B204FCD4F004AC950 /* MineViewController.m in Sources */,
+				0496E7EB21996A73001FF76E /* PaiDanVC.m in Sources */,
 				8457D79F204F7222002FF42A /* RootViewController.m in Sources */,
+				0496E800219986CA001FF76E /* LCUserDefaultsModel.m in Sources */,
 				C55B8A82207C6A9E00DCAF7D /* SSPopup.m in Sources */,
 				852C383A207B58E30088A812 /* ShareManager.m in Sources */,
 				843D6E85204FCD29004AC950 /* HomeViewController.m in Sources */,
@@ -1244,6 +1343,7 @@
 				855C68A1209B02DD00D17990 /* JMGuidViewController.m in Sources */,
 				0406B84721815EA7006CED81 /* CameraVC.m in Sources */,
 				0432368B218AEF6E0049C358 /* AssetsTableViewDelegate.m in Sources */,
+				0496E801219986CA001FF76E /* UDUserDefaultsModel.m in Sources */,
 				85EDDBA3207DE3D300E78B6D /* UILabel+YBAttributeTextTapAction.m in Sources */,
 				0406B7F621815888006CED81 /* VolumeChangeVC.m in Sources */,
 				0406B82F21815E4C006CED81 /* CameraViewController.m in Sources */,
@@ -1270,6 +1370,7 @@
 				84191BA4205750F600DBA00F /* TAAnimatedDotView.m in Sources */,
 				855C68A3209B02DD00D17990 /* ChangeFontWithButton.m in Sources */,
 				C5A0C8FB2086C8E60027192B /* BaseViewController.m in Sources */,
+				0496E7EF21996AC8001FF76E /* PanDanListVC.m in Sources */,
 				84191BA7205750F600DBA00F /* SDCollectionViewCell.m in Sources */,
 				04E49DBE21816C990092AFB9 /* LWQRCodeViewController.m in Sources */,
 				84D94AF5204E2DEB00A295B3 /* main.m in Sources */,
@@ -1280,6 +1381,7 @@
 				8588EAAA2080518A00C6FD16 /* UIButton+touch.m in Sources */,
 				843D6E82204FCD1A004AC950 /* AssetsListViewController.m in Sources */,
 				84191BA9205750F600DBA00F /* UIView+SDExtension.m in Sources */,
+				0496E8042199870D001FF76E /* LHUserDefaultViewController.m in Sources */,
 				0432368E218AF6560049C358 /* TableViewModel.m in Sources */,
 				841FB7022068976900E06AC0 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				C5A0C8F92086C8C40027192B /* MyAlertView.m in Sources */,

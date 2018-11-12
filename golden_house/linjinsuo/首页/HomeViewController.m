@@ -15,6 +15,11 @@
 #import "ViewTapVC.h"
 #import "SingleVC.h"
 #import "BigImgVVC.h"
+#import "MyAlertView.h"
+#import "PaiDanVC.h"
+#import "SegmentViewController.h"
+#import "LHUserDefaultViewController.h"
+
 
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,NoDataViewTouchDelegate>
@@ -129,7 +134,37 @@
             [self pushVc:vc];
             
             break;
+        case 10:
+            // UIview+tap
+//            vc = [[PaiDanVC alloc]init];
+//            vc.
             
+            break;
+            
+        case 11:
+            // UIview+tap
+            vc = [[PaiDanVC alloc]init];
+            if ([vc isKindOfClass:[UIViewController class]] == NO) return ;
+            if (self.navigationController == nil) return ;
+            if (vc.hidesBottomBarWhenPushed == NO) {
+                vc.hidesBottomBarWhenPushed = YES;
+            }
+            
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        case 12:
+            vc = [[SegmentViewController alloc]init];
+            [self pushVc:vc];
+            
+            
+            break;
+            
+        case 13:
+            vc = [[LHUserDefaultViewController alloc]init];
+            
+            [self pushVc:vc];
+            
+            break;
         default:
             break;
     }
@@ -138,7 +173,7 @@
 #pragma make -------- 初始化
 - (NSArray *)arrTitles{
     if (!_arrTitles) {
-        _arrTitles = @[@"0 IconFont的用法",@"1 shareView分享",@"2 音声调节",@"3 相机拍照剪裁",@"4 提示框1",@"5 提示框2",@"6 二维码扫描扫描区域可调",@"7 UIview+tap 图片剪裁切割",@"单选按钮实现",@"图片点击放大缩小"];
+        _arrTitles = @[@"0 IconFont的用法",@"1 shareView分享",@"2 音声调节",@"3 相机拍照剪裁",@"4 提示框1",@"5 提示框2",@"6 二维码扫描扫描区域可调",@"7 UIview+tap 图片剪裁切割",@"8单选按钮实现",@"9图片点击放大缩小",@"10弹出框",@"11分段控制器",@"12分段控制自定义",@"13 LCUserDefaultsModel 代替简单UserDefault "];
     }
     return _arrTitles;
 }
@@ -188,6 +223,8 @@
    // http://www.iconfont.cn/manage/index?spm=a313x.7781069.1998910419.db775f1f3&manage_type=myprojects&projectId=884401&keyword=
     // 配合Pch tool中的文件以及
     NSLog(@"IconFont的用法");
+    
+  
 }
 
 

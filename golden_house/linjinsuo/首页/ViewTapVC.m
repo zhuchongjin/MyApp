@@ -25,6 +25,9 @@
     [self setBackLeftButton:@""];
     
     
+    
+ 
+    
     // UIView+tap 实例
     [self.view addSubview:self.lab];
     [self.lab setTapActionWithBlock:^{

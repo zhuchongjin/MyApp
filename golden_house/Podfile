@@ -11,5 +11,6 @@ pod 'UMengUShare/Social/ReducedSina'
 pod 'UMengAnalytics-NO-IDFA', '~> 4.2.5'
 pod 'WebViewJavascriptBridge'
 pod ‘IQKeyboardManager’
+pod 'WMPageController'
 end
 
