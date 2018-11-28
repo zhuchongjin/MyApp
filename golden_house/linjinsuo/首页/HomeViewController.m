@@ -20,6 +20,9 @@
 #import "SegmentViewController.h"
 #import "LHUserDefaultViewController.h"
 
+#import "XLFormVC.h"
+#import "XLImageVC.h"
+
 
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,NoDataViewTouchDelegate>
@@ -71,13 +74,12 @@
     cell.imageView.transform = CGAffineTransformMakeScale(.6, .6);
     cell.imageView.image = LHIconImageInfoMake(self.arrImgs[indexPath.row], 35, LHRandomColor);
 //    cell.separatorInset = UIEdgeInsetsMake(0.3f, 40.0f, 0.0f,0.0f);
-    
-    
+    cell.textLabel.numberOfLines = 0;
     return cell;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+
     return 50;
 }
 
@@ -165,6 +167,25 @@
             [self pushVc:vc];
             
             break;
+            
+        case 14:
+            
+            vc = [[XLFormVC alloc]init];
+            if ([vc isKindOfClass:[UIViewController class]] == NO) return ;
+            if (self.navigationController == nil) return ;
+            if (vc.hidesBottomBarWhenPushed == NO) {
+                vc.hidesBottomBarWhenPushed = YES;
+            }
+            
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+            
+        case 15:
+            
+            vc = [[XLImageVC alloc]init];
+            [self pushVc:vc];
+           
+            break;
         default:
             break;
     }
@@ -173,7 +194,7 @@
 #pragma make -------- 初始化
 - (NSArray *)arrTitles{
     if (!_arrTitles) {
-        _arrTitles = @[@"0 IconFont的用法",@"1 shareView分享",@"2 音声调节",@"3 相机拍照剪裁",@"4 提示框1",@"5 提示框2",@"6 二维码扫描扫描区域可调",@"7 UIview+tap 图片剪裁切割",@"8单选按钮实现",@"9图片点击放大缩小",@"10弹出框",@"11分段控制器",@"12分段控制自定义",@"13 LCUserDefaultsModel 代替简单UserDefault "];
+        _arrTitles = @[@"0 IconFont的用法",@"1 shareView分享",@"2 音声调节",@"3 相机拍照剪裁",@"4 提示框1",@"5 提示框2",@"6 二维码扫描扫描区域可调",@"7 UIview+tap 图片剪裁切割",@"8单选按钮实现",@"9图片点击放大缩小",@"10弹出框",@"11分段控制器",@"12分段控制自定义",@"13 LCUserDefaultsModel 代替简单UserDefault ",@"14 XLFrom布局",@"15 仿今日头条图片浏览工具，支持下滑返回"];
     }
     return _arrTitles;
 }
