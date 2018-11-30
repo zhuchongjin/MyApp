@@ -23,11 +23,7 @@
     // Do any additional setup after loading the view.
     [self setTitleName:@"UIvie+Tap"];
     [self setBackLeftButton:@""];
-    
-    
-    
- 
-    
+
     // UIView+tap 实例
     [self.view addSubview:self.lab];
     [self.lab setTapActionWithBlock:^{

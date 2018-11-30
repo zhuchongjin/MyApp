@@ -9,9 +9,9 @@
 #import "AppDelegate.h"
 #import "RootViewController.h"
 #import "JMGuidViewController.h"
-
+#import <Bugly/Bugly.h>
 #import "TBCityIconFont.h"
-@interface AppDelegate ()
+@interface AppDelegate ()<BuglyDelegate>
 
 @end
 
@@ -20,8 +20,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [TBCityIconFont setFontName:@"iconfont"];    //iconFont 
+    [TBCityIconFont setFontName:@"iconfont"];    //iconFont
     
+    
+    // bug 崩溃统计分析
+    
+//    BuglyConfig *config = [[BuglyConfig alloc] init];
+//    config.unexpectedTerminatingDetectionEnable = YES; //非正常退出事件记录开关，默认关闭
+//    config.reportLogLevel = BuglyLogLevelWarn; //报告级别
+//    config.deviceIdentifier = [UIDevice currentDevice].identifierForVendor.UUIDString; //设备标识
+//    config.blockMonitorEnable = YES; //开启卡顿监控
+//    config.blockMonitorTimeout = 5; //卡顿监控判断间隔，单位为秒
+//    config.delegate = self;
+    
+    [Bugly startWithAppId:@"c0971417b4"];
     
     [self umengShare];
     if ([self isFirstOpen]) {
@@ -43,6 +55,16 @@
     // Override point for customization after application launch.
     return YES;
 }
+
+//#pragma mark - BuglyDelegate
+//此方法返回的数据，可在bugly平台中异常上报，具体异常信息的跟踪数据附件信息中的crash_attach.log中查看
+-(NSString *)attachmentForException:(NSException *)exception{
+
+    //    [Bugly reportException:exception];
+    return [NSString stringWithFormat:@"exceptionInfo:\nname:%@\nreason:%@",exception.name,exception.reason];
+}
+
+
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.

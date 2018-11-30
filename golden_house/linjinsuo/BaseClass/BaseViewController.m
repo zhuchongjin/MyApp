@@ -293,6 +293,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (BOOL)prefersHomeIndicatorAutoHidden {
+    
+    return YES;
+}
+
 /*
 #pragma mark - Navigation
 

@@ -12,5 +12,6 @@ pod 'UMengAnalytics-NO-IDFA', '~> 4.2.5'
 pod 'WebViewJavascriptBridge'
 pod ‘IQKeyboardManager’
 pod 'WMPageController'
+pod 'Bugly'
 end
 

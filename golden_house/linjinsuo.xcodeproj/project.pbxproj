@@ -119,6 +119,7 @@
 		04497F1721AE64E3008017DC /* ShowLocalImagesDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04497F1621AE64E3008017DC /* ShowLocalImagesDemoVC.m */; };
 		04497F1A21AE6500008017DC /* ShowNetImagesDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04497F1921AE6500008017DC /* ShowNetImagesDemoVC.m */; };
 		04497F1D21AE6768008017DC /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04497F1C21AE6767008017DC /* ImageCell.m */; };
+		0452FAFB21B129BC000D8F6F /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0452FAFA21B129BC000D8F6F /* ContactViewController.m */; };
 		0465457621804EC900F731D1 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0465457521804EC900F731D1 /* iconfont.ttf */; };
 		048B8674217EA84F003B849F /* TBCityIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B866E217EA84F003B849F /* TBCityIconFont.m */; };
 		048B8675217EA84F003B849F /* TBCityIconInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B866F217EA84F003B849F /* TBCityIconInfo.m */; };
@@ -412,6 +413,8 @@
 		04497F1921AE6500008017DC /* ShowNetImagesDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowNetImagesDemoVC.m; sourceTree = "<group>"; };
 		04497F1B21AE6767008017DC /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
 		04497F1C21AE6767008017DC /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		0452FAF921B129BC000D8F6F /* ContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		0452FAFA21B129BC000D8F6F /* ContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
 		0465457521804EC900F731D1 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		048B866E217EA84F003B849F /* TBCityIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityIconFont.m; sourceTree = "<group>"; };
 		048B866F217EA84F003B849F /* TBCityIconInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityIconInfo.m; sourceTree = "<group>"; };
@@ -979,6 +982,15 @@
 			path = ImageForView;
 			sourceTree = "<group>";
 		};
+		0452FAF821B12921000D8F6F /* 获取通讯联系人 */ = {
+			isa = PBXGroup;
+			children = (
+				0452FAF921B129BC000D8F6F /* ContactViewController.h */,
+				0452FAFA21B129BC000D8F6F /* ContactViewController.m */,
+			);
+			path = "获取通讯联系人";
+			sourceTree = "<group>";
+		};
 		048B866C217EA82D003B849F /* iconFont */ = {
 			isa = PBXGroup;
 			children = (
@@ -1316,6 +1328,7 @@
 		8457D7A0204F750D002FF42A /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				0452FAF821B12921000D8F6F /* 获取通讯联系人 */,
 				04497EF221AE5F8B008017DC /* XLImage */,
 				0449202721AD28900027D5D6 /* XlForms */,
 				0496E7F921998688001FF76E /* 简单代替UserDefault */,
@@ -1874,6 +1887,7 @@
 				852C3839207B58E30088A812 /* ECShareView.m in Sources */,
 				84B2A7A9204FD64D0072F36D /* MJChiBaoZiFooter.m in Sources */,
 				04E49D9F218165DA0092AFB9 /* UIView+MJAlertView.m in Sources */,
+				0452FAFB21B129BC000D8F6F /* ContactViewController.m in Sources */,
 				04497EED21AE5CE9008017DC /* FLAnimatedImageView.m in Sources */,
 				858434C620842C7200C4C114 /* NSTimer+MTAddition.m in Sources */,
 				0449201921AD27C60027D5D6 /* XLForm.m in Sources */,

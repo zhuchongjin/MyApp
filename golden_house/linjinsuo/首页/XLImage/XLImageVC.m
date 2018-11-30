@@ -41,14 +41,14 @@
 #pragma mark -
 #pragma mark TableViewDelegate&DataSource
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (indexPath.row == 2) {
-        return 100;
-    }
-    
-    return 50;
-}
+//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    if (indexPath.row == 2) {
+//        return 100;
+//    }
+//
+//    return 50;
+//}
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -101,7 +101,6 @@
         //            // Fallback on earlier versions
         //        }
         
-
         _tableView.backgroundColor = LHBackgroundColor;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
         [_tableView setSeparatorInset:UIEdgeInsetsMake(0,15,0,15)];
@@ -114,6 +113,10 @@
         _tableView.contentInset = UIEdgeInsetsMake(0, 0, 85+SafeAreaBottomHeight, 0);
         _tableView.scrollIndicatorInsets = UIEdgeInsetsMake(topHeight, 0, 85+SafeAreaBottomHeight, 0);
         _tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+        
+        _tableView.estimatedRowHeight = 250;//预估高度
+        _tableView.rowHeight = UITableViewAutomaticDimension;
+        
         [self.view addSubview:_tableView];
     }
     

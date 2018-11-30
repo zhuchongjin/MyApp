@@ -22,7 +22,6 @@
      [self setBackLeftButton:@""];
     [self setTitleName:@"图片点击放大缩小"];
    
-    
     self.imgV.userInteractionEnabled = YES;
     SYBigImage * bigI = [[SYBigImage alloc]init];
     [self.imgV addGestureRecognizer:bigI];

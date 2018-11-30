@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>iconfont.ttf</string>
-	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -179,10 +175,16 @@
 	<string>需要您的同意,才能访问媒体资料库</string>
 	<key>NSCameraUsageDescription</key>
 	<string>需要您的同意,才能使用相机</string>
+	<key>NSContactsUsageDescription</key>
+	<string>需要获取获取您通讯录</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>需要您的同意,才能能访问相册</string>
 	<key>NSPhotoLibraryUsageDescriptionApp</key>
 	<string>需要您的同意,才能访问相机</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>iconfont.ttf</string>
+	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

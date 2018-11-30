@@ -19,6 +19,7 @@
 #import "PaiDanVC.h"
 #import "SegmentViewController.h"
 #import "LHUserDefaultViewController.h"
+#import "ContactViewController.h"
 
 #import "XLFormVC.h"
 #import "XLImageVC.h"
@@ -78,10 +79,10 @@
     return cell;
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-
-    return 50;
-}
+//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+//
+//    return 50;
+//}
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -157,15 +158,11 @@
         case 12:
             vc = [[SegmentViewController alloc]init];
             [self pushVc:vc];
-            
-            
             break;
             
         case 13:
             vc = [[LHUserDefaultViewController alloc]init];
-            
             [self pushVc:vc];
-            
             break;
             
         case 14:
@@ -181,11 +178,15 @@
             break;
             
         case 15:
-            
             vc = [[XLImageVC alloc]init];
             [self pushVc:vc];
-           
             break;
+            
+        case 16:
+            vc = [[ContactViewController alloc]init];
+            [self pushVc:vc];
+            break;
+            
         default:
             break;
     }
@@ -194,13 +195,14 @@
 #pragma make -------- 初始化
 - (NSArray *)arrTitles{
     if (!_arrTitles) {
-        _arrTitles = @[@"0 IconFont的用法",@"1 shareView分享",@"2 音声调节",@"3 相机拍照剪裁",@"4 提示框1",@"5 提示框2",@"6 二维码扫描扫描区域可调",@"7 UIview+tap 图片剪裁切割",@"8单选按钮实现",@"9图片点击放大缩小",@"10弹出框",@"11分段控制器",@"12分段控制自定义",@"13 LCUserDefaultsModel 代替简单UserDefault ",@"14 XLFrom布局",@"15 仿今日头条图片浏览工具，支持下滑返回"];
+        _arrTitles = @[@"0 IconFont的用法",@"1 shareView分享",@"2 音声调节",@"3 相机拍照剪裁",@"4 提示框1",@"5 提示框2",@"6 二维码扫描扫描区域可调",@"7 UIview+tap 图片剪裁切割",@"8单选按钮实现",@"9图片点击放大缩小",@"10弹出框",@"11分段控制器",@"12分段控制自定义",@"13 LCUserDefaultsModel 代替简单UserDefault ",@"14 XLFrom布局",@"15 仿今日头条图片浏览工具，支持下滑返回 ",@"获取通讯录联系人信息"];
     }
     return _arrTitles;
 }
+
 - (NSArray *)arrImgs{
     if (!_arrImgs) {
-        _arrImgs = @[@"\U0000e60f",@"\U0000e684",@"\U0000e61f",@"\U0000e62c",@"\U0000e652",@"\U0000e612",@"\U0000e602",@"\U0000e7a6",@"\U0000e60a",@"\U0000e652",@"\U0000e61f",@"\U0000e6a7",@"\U0000e684",@"\U0000e62c",@"\U0000e68d",@"\U0000e620",@"\U0000e604",@"\U0000e757",@"\U0000e62e",@"\U0000e62e",@"\U0000e600",@"\U0000e60d",@"\U0000e64b",@"\U0000e60f",@"\U0000e624",@"\U0000e605",@"\U0000e657"];
+        _arrImgs = @[@"\U0000e60f",@"\U0000e684",@"\U0000e61f",@"\U0000e62c",@"\U0000e652",@"\U0000e612",@"\U0000e602",@"\U0000e7a6",@"\U0000e60a",@"\U0000e652",@"\U0000e61f",@"\U0000e6a7",@"\U0000e684",@"\U0000e62c",@"\U0000e68d",@"\U0000e620",@"\U0000e604",@"\U0000e757",@"\U0000e62e",@"\U0000e62e",@"\U0000e600",@"\U0000e60d",@"\U0000e64b",@"\U0000e60f",@"\U0000e624",@"\U0000e605",@"\U0000e657",@"\U0000e60f",@"\U0000e684",@"\U0000e61f",@"\U0000e62c",@"\U0000e652",@"\U0000e612",@"\U0000e602",@"\U0000e7a6",@"\U0000e60a",@"\U0000e652",@"\U0000e61f",@"\U0000e6a7",@"\U0000e684",@"\U0000e62c",@"\U0000e68d",@"\U0000e620",@"\U0000e604",@"\U0000e757",@"\U0000e62e",@"\U0000e62e",@"\U0000e600",@"\U0000e60d",@"\U0000e64b",@"\U0000e60f",@"\U0000e624",@"\U0000e605",@"\U0000e657"];
     }
     return _arrImgs;
 }
@@ -285,6 +287,11 @@
     tableView.contentInset = UIEdgeInsetsMake(0, 0, 85+SafeAreaBottomHeight, 0);
     tableView.scrollIndicatorInsets = UIEdgeInsetsMake(topHeight, 0, 85+SafeAreaBottomHeight, 0);
     tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+    
+    //  高度自适应   也可以混着用
+    tableView.estimatedRowHeight = 250;//预估高度
+    tableView.rowHeight = UITableViewAutomaticDimension;
+    
     [self.view addSubview:tableView];
     self.tableView = tableView;
     
