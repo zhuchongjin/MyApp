@@ -120,6 +120,12 @@
 		04497F1A21AE6500008017DC /* ShowNetImagesDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04497F1921AE6500008017DC /* ShowNetImagesDemoVC.m */; };
 		04497F1D21AE6768008017DC /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04497F1C21AE6767008017DC /* ImageCell.m */; };
 		0452FAFB21B129BC000D8F6F /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0452FAFA21B129BC000D8F6F /* ContactViewController.m */; };
+		0452FB0321B51463000D8F6F /* SegmentFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0452FB0121B51463000D8F6F /* SegmentFormCell.m */; };
+		0452FB0421B51463000D8F6F /* SegmentFormCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0452FB0221B51463000D8F6F /* SegmentFormCell.xib */; };
+		0452FB0821B517BF000D8F6F /* TextViewFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0452FB0621B517BF000D8F6F /* TextViewFormCell.m */; };
+		0452FB0921B517BF000D8F6F /* TextViewFormCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0452FB0721B517BF000D8F6F /* TextViewFormCell.xib */; };
+		0452FB0D21B5237D000D8F6F /* ActionFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0452FB0A21B5237C000D8F6F /* ActionFormCell.m */; };
+		0452FB0E21B5237D000D8F6F /* ActionFormCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0452FB0B21B5237D000D8F6F /* ActionFormCell.xib */; };
 		0465457621804EC900F731D1 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0465457521804EC900F731D1 /* iconfont.ttf */; };
 		048B8674217EA84F003B849F /* TBCityIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B866E217EA84F003B849F /* TBCityIconFont.m */; };
 		048B8675217EA84F003B849F /* TBCityIconInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B866F217EA84F003B849F /* TBCityIconInfo.m */; };
@@ -415,6 +421,15 @@
 		04497F1C21AE6767008017DC /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
 		0452FAF921B129BC000D8F6F /* ContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
 		0452FAFA21B129BC000D8F6F /* ContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		0452FB0021B51463000D8F6F /* SegmentFormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentFormCell.h; sourceTree = "<group>"; };
+		0452FB0121B51463000D8F6F /* SegmentFormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentFormCell.m; sourceTree = "<group>"; };
+		0452FB0221B51463000D8F6F /* SegmentFormCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentFormCell.xib; sourceTree = "<group>"; };
+		0452FB0521B517BE000D8F6F /* TextViewFormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewFormCell.h; sourceTree = "<group>"; };
+		0452FB0621B517BF000D8F6F /* TextViewFormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewFormCell.m; sourceTree = "<group>"; };
+		0452FB0721B517BF000D8F6F /* TextViewFormCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewFormCell.xib; sourceTree = "<group>"; };
+		0452FB0A21B5237C000D8F6F /* ActionFormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionFormCell.m; sourceTree = "<group>"; };
+		0452FB0B21B5237D000D8F6F /* ActionFormCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionFormCell.xib; sourceTree = "<group>"; };
+		0452FB0C21B5237D000D8F6F /* ActionFormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionFormCell.h; sourceTree = "<group>"; };
 		0465457521804EC900F731D1 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		048B866E217EA84F003B849F /* TBCityIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityIconFont.m; sourceTree = "<group>"; };
 		048B866F217EA84F003B849F /* TBCityIconInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityIconInfo.m; sourceTree = "<group>"; };
@@ -866,6 +881,7 @@
 		0449202721AD28900027D5D6 /* XlForms */ = {
 			isa = PBXGroup;
 			children = (
+				0452FAFF21B513F0000D8F6F /* 自定义Cell */,
 				0449202E21AD30100027D5D6 /* Others */,
 				0449202B21AD2A690027D5D6 /* XLFormVC.h */,
 				0449202C21AD2A690027D5D6 /* XLFormVC.m */,
@@ -989,6 +1005,22 @@
 				0452FAFA21B129BC000D8F6F /* ContactViewController.m */,
 			);
 			path = "获取通讯联系人";
+			sourceTree = "<group>";
+		};
+		0452FAFF21B513F0000D8F6F /* 自定义Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0452FB0C21B5237D000D8F6F /* ActionFormCell.h */,
+				0452FB0A21B5237C000D8F6F /* ActionFormCell.m */,
+				0452FB0B21B5237D000D8F6F /* ActionFormCell.xib */,
+				0452FB0521B517BE000D8F6F /* TextViewFormCell.h */,
+				0452FB0621B517BF000D8F6F /* TextViewFormCell.m */,
+				0452FB0721B517BF000D8F6F /* TextViewFormCell.xib */,
+				0452FB0021B51463000D8F6F /* SegmentFormCell.h */,
+				0452FB0121B51463000D8F6F /* SegmentFormCell.m */,
+				0452FB0221B51463000D8F6F /* SegmentFormCell.xib */,
+			);
+			path = "自定义Cell";
 			sourceTree = "<group>";
 		};
 		048B866C217EA82D003B849F /* iconFont */ = {
@@ -1657,6 +1689,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04497F0B21AE60B8008017DC /* 10.png in Resources */,
+				0452FB0E21B5237D000D8F6F /* ActionFormCell.xib in Resources */,
 				04497F0721AE60B8008017DC /* 8.png in Resources */,
 				043236A0218C1DCE0049C358 /* RadioButton-Selected.png in Resources */,
 				0406B84221815E4D006CED81 /* backPhoto@2x.png in Resources */,
@@ -1710,11 +1743,13 @@
 				84D94AFE204E2DEB00A295B3 /* Main.storyboard in Resources */,
 				04E49DB621816C990092AFB9 /* ScanQR3@2x.png in Resources */,
 				0406B83721815E4D006CED81 /* takePhoto@3x.png in Resources */,
+				0452FB0921B517BF000D8F6F /* TextViewFormCell.xib in Resources */,
 				0406B83021815E4C006CED81 /* cameraPhoto@2x.png in Resources */,
 				0406B7F22181539F006CED81 /* demo_unicode.html in Resources */,
 				0406B84021815E4D006CED81 /* surePhoto@2x.png in Resources */,
 				0406B83621815E4D006CED81 /* sureCamera@3x.png in Resources */,
 				04497F0E21AE60B8008017DC /* 7.png in Resources */,
+				0452FB0421B51463000D8F6F /* SegmentFormCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1795,6 +1830,7 @@
 				84212DFD204E963200EAE58E /* HDPicModle.m in Sources */,
 				855C68A4209B02DD00D17990 /* ChangeFontWithLabel.m in Sources */,
 				04E49D9E218165DA0092AFB9 /* ARToastView.m in Sources */,
+				0452FB0D21B5237D000D8F6F /* ActionFormCell.m in Sources */,
 				0449200621AD27C60027D5D6 /* XLFormCheckCell.m in Sources */,
 				0449202621AD27C60027D5D6 /* XLFormValidator.m in Sources */,
 				0406B84421815E4D006CED81 /* TKImageView.m in Sources */,
@@ -1839,6 +1875,7 @@
 				8457D79F204F7222002FF42A /* RootViewController.m in Sources */,
 				0449201621AD27C60027D5D6 /* XLFormViewController.m in Sources */,
 				0496E800219986CA001FF76E /* LCUserDefaultsModel.m in Sources */,
+				0452FB0321B51463000D8F6F /* SegmentFormCell.m in Sources */,
 				C55B8A82207C6A9E00DCAF7D /* SSPopup.m in Sources */,
 				852C383A207B58E30088A812 /* ShareManager.m in Sources */,
 				04497F1A21AE6500008017DC /* ShowNetImagesDemoVC.m in Sources */,
@@ -1908,6 +1945,7 @@
 				0449200421AD27C60027D5D6 /* XLFormStepCounterCell.m in Sources */,
 				8532875E2071CD39008C7A14 /* BaseTabViewController.m in Sources */,
 				04323688218AEE620049C358 /* AssetsTableViewDataSource.m in Sources */,
+				0452FB0821B517BF000D8F6F /* TextViewFormCell.m in Sources */,
 				04323694218BF0630049C358 /* SingleVC.m in Sources */,
 				8588EAAA2080518A00C6FD16 /* UIButton+touch.m in Sources */,
 				843D6E82204FCD1A004AC950 /* AssetsListViewController.m in Sources */,

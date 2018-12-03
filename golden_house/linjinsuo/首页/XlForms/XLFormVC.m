@@ -8,7 +8,9 @@
 
 #import "XLFormVC.h"
 #import "XLForm.h"
-
+#import "SegmentFormCell.h"
+#import "TextViewFormCell.h"
+#import "ActionFormCell.h"
 
 NSString *const kSwitchBool = @"switchBool";
 NSString *const kSwitchCheck = @"switchCheck";
@@ -89,7 +91,7 @@ NSString *const kButtonWithStoryboardId = @"buttonWithStoryboardId";
     [form addFormSection:section];
     
     // Switch
-    row = [XLFormRowDescriptor formRowDescriptorWithTag:kSwitchBool rowType:XLFormRowDescriptorTypeBooleanSwitch title:@"Switch"];
+    row = [XLFormRowDescriptor formRowDescriptorWithTag:kSwitchBool rowType:XLFormRowDescriptorTypeBooleanSwitch title:@"Switch是否显示push"];
     [row.cellConfigAtConfigure setObject:[UIColor redColor] forKey:@"switchControl.onTintColor"];
     [section addFormRow:row];
     
@@ -97,11 +99,12 @@ NSString *const kButtonWithStoryboardId = @"buttonWithStoryboardId";
     row = [XLFormRowDescriptor formRowDescriptorWithTag:@"输入框" rowType:XLFormRowDescriptorTypeText title:@"输入框"];
     [row.cellConfig setObject:@"用户名" forKey:@"textField.placeholder"];
     [row.cellConfigAtConfigure setObject:[UIColor redColor] forKey:@"textField.textColor"];
-
+    row.required = YES;  //是否必填
     [section addFormRow:row];
 
     
     row = [XLFormRowDescriptor formRowDescriptorWithTag:@"password" rowType:XLFormRowDescriptorTypePassword title:@"密码"];
+    row.required = YES;  //是否必填
 //    // 设置placeholder的颜色
 //    NSAttributedString *attrString = [[NSAttributedString alloc] initWithString:@"密码" attributes:
 //                                              @{NSForegroundColorAttributeName:[UIColor greenColor], }];
@@ -109,24 +112,102 @@ NSString *const kButtonWithStoryboardId = @"buttonWithStoryboardId";
     [section addFormRow:row];
     
     
-    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"selectorPush" rowType:XLFormRowDescriptorTypeSelectorPush title:@"Push"];
-    row.selectorOptions = @[[XLFormOptionsObject formOptionsObjectWithValue:@(0) displayText:@"Option 1"],
-                            [XLFormOptionsObject formOptionsObjectWithValue:@(1) displayText:@"Option 2"],
-                            [XLFormOptionsObject formOptionsObjectWithValue:@(2) displayText:@"Option 3"],
-                            [XLFormOptionsObject formOptionsObjectWithValue:@(3) displayText:@"Option 4"],
-                            [XLFormOptionsObject formOptionsObjectWithValue:@(4) displayText:@"Option 5"]
+    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"selectorPush" rowType:XLFormRowDescriptorTypeSelectorPush title:@"Push 选择地区"];
+    row.selectorOptions = @[[XLFormOptionsObject formOptionsObjectWithValue:@(0) displayText:@"山东"],
+                            [XLFormOptionsObject formOptionsObjectWithValue:@(1) displayText:@"济南"],
+                            [XLFormOptionsObject formOptionsObjectWithValue:@(2) displayText:@"临沂"],
+                            [XLFormOptionsObject formOptionsObjectWithValue:@(3) displayText:@"河东"],
+                            [XLFormOptionsObject formOptionsObjectWithValue:@(4) displayText:@"八湖"]
                             ];
    
-    row.value = [XLFormOptionsObject formOptionsObjectWithValue:@(1) displayText:@"Option 2"];
+    row.value = [XLFormOptionsObject formOptionsObjectWithValue:@(1) displayText:@"济南"];
     
     [section addFormRow:row];
     
     
     
+    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"status" rowType:ZNFormRowDescriptorTypeSegment title:@"设备状态:"];
+    row.value = @"1";
+    [section addFormRow:row];
+    
+    
+    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"message" rowType:ZNFormRowDescriptorTypeTextView title:@""];
+//    [row.cellConfig setObject:@(10) forKey:@"textViewMaxNumberOfCharacters"];
+    row.hidden = @YES;
+    [section addFormRow:row];
+    
+    // 提交
+    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"submit" rowType:ZNFormRowDescriptorTypeSubmitBtn title:@""];
+    row.value = @"提交";
+    row.action.formSelector = @selector(submitClick);
+    [section addFormRow:row];
+    
+    section.footerTitle = @"foot title";
+    
+
+    
+    // 行数的增加  删除等
+    section = [XLFormSectionDescriptor formSectionWithTitle:@"cell的怎删改查"
+                                             sectionOptions: XLFormSectionOptionCanInsert | XLFormSectionOptionCanDelete
+                                          sectionInsertMode:XLFormSectionInsertModeButton];
+    section.multivaluedAddButton.title = @"Add New Tag";
+    section.footerTitle = @"XLFormSectionInsertModeButton sectionType adds a 'Add Item' (Add New Tag) button row as last cell.";
+    // set up the row template
+    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"status" rowType:ZNFormRowDescriptorTypeSegment title:@"设备状态:"];
+    row.value = @"1";
+//    [[row cellConfig] setObject:@"Tag Name" forKey:@"textField.placeholder"];
+    section.multivaluedRowTemplate = row;
+    [form addFormSection:section];
+    
+  
     self.form = form;
     
+}
+
+- (void)submitClick{
     
+    //获取数据
+    NSLog(@"formValues---%@",[self.form formValues]);
     
+    //校验
+    NSLog(@"errors---%@",[self formValidationErrors]);
+    
+    if ([self formValidationErrors].count>0) {
+        [UIView addMJNotifierWithText:[[self formValidationErrors].firstObject localizedDescription] dismissAutomatically:YES];
+        return;
+    }
+    
+}
+
+#pragma mark XLFormDescriptorDelegate
+-(void)formRowDescriptorValueHasChanged:(XLFormRowDescriptor *)rowDescriptor oldValue:(id)oldValue newValue:(id)newValue{
+    // super implmentation MUST be called
+    [super formRowDescriptorValueHasChanged:rowDescriptor oldValue:oldValue newValue:newValue];
+    
+    NSLog(@"xlform ------- cell 操作 %@",rowDescriptor.tag);
+    if ([rowDescriptor.tag isEqualToString:@"status"]) {
+        XLFormRowDescriptor *textViewRowDescriptor = [self.form formRowWithTag:@"message"];
+        if ([rowDescriptor.value isEqualToString:@"2"]) {
+            textViewRowDescriptor.hidden = @NO;
+            
+        }else{
+            textViewRowDescriptor.hidden = @YES;
+        }
+    }else if([rowDescriptor.tag isEqualToString:kSwitchBool]){
+        NSLog("---%@",rowDescriptor.value);
+        
+        XLFormRowDescriptor *pushDescriptor = [self.form formRowWithTag:@"selectorPush"];
+        if ([LHStringWithFormat(@"%@",pushDescriptor.value) isEqualToString:@"0"]) {
+            pushDescriptor.hidden = @NO;
+        }else{
+            pushDescriptor.hidden = @YES;
+        }
+    
+        
+    }
+    
+}
+
     
 //    XLFormDescriptor * form = [XLFormDescriptor formDescriptorWithTitle:@"Other Cells"];
 //    XLFormSectionDescriptor * section;
@@ -241,7 +322,8 @@ NSString *const kButtonWithStoryboardId = @"buttonWithStoryboardId";
 //    [section addFormRow:buttonWithNibName];
 //
 //    self.form = form;
-}
+//}
+
 
 -(void)didTouchButton:(XLFormRowDescriptor *)sender
 {

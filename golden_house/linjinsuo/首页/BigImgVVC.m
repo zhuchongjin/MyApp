@@ -26,6 +26,8 @@
     SYBigImage * bigI = [[SYBigImage alloc]init];
     [self.imgV addGestureRecognizer:bigI];
     
+    NSArray *arr = @[@"",@"",@""];
+    arr[3];
 }
 
 - (void)didReceiveMemoryWarning {
