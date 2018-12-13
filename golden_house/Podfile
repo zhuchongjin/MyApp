@@ -13,5 +13,8 @@ pod 'WebViewJavascriptBridge'
 pod ‘IQKeyboardManager’
 pod 'WMPageController'
 pod 'Bugly'
+
+pod 'ReactiveObjC'     
+
 end
 

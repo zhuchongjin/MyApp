@@ -48,8 +48,8 @@
 #define SafeAreaBottomHeight (SCREEN_HEIGHT == 812.0 ? 34 : 0)
 
 /****************************屏幕和高***********************************/
-#define viewWidth self.view.frame.size.width
-#define viewHeigt self.view.frame.size.height
+#define viewWidth   SCREEN_WIDTH  //     self.view.frame.size.width
+#define viewHeigt   SCREEN_HEIGHT           //      self.view.frame.size.height
 // 屏幕宽度，跟横竖屏无关
 #define DEVICE_WIDTH (IOS_VERSION >= 8.0 ? (IS_LANDSCAPE ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width) : [[UIScreen mainScreen] bounds].size.width)
 // 屏幕高度，跟横竖屏无关

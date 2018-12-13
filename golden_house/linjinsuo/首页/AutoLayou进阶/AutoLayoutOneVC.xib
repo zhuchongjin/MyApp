@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AutoLayoutOneVC">
+            <connections>
+                <outlet property="imageV" destination="LN1-Pg-UCY" id="LYk-ZM-uko"/>
+                <outlet property="imageVWidth" destination="YNe-3y-mnb" id="HAK-7c-TA0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="report_popover" translatesAutoresizingMaskIntoConstraints="NO" id="LN1-Pg-UCY">
+                    <rect key="frame" x="27.666666666666657" y="150" width="320" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="YNe-3y-mnb"/>
+                        <constraint firstAttribute="height" constant="150" id="ik2-DB-ZAx"/>
+                        <constraint firstAttribute="width" secondItem="LN1-Pg-UCY" secondAttribute="height" multiplier="32:15" id="v7s-Br-ZyB"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LN1-Pg-UCY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="150" id="EOZ-24-bIN"/>
+                <constraint firstItem="LN1-Pg-UCY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lUm-Du-qnd"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="report_popover" width="50" height="50"/>
+    </resources>
+</document>

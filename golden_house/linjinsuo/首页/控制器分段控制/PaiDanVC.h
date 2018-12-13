@@ -7,7 +7,6 @@
 //
 
 #import "WMPageController.h"
-#import "WMPageController.h"
 
 @interface PaiDanVC : WMPageController
 @property (nonatomic , strong) NSArray *titleArray;

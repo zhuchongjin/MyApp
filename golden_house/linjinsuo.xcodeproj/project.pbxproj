@@ -138,6 +138,14 @@
 		0496E800219986CA001FF76E /* LCUserDefaultsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496E7FB219986CA001FF76E /* LCUserDefaultsModel.m */; };
 		0496E801219986CA001FF76E /* UDUserDefaultsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496E7FF219986CA001FF76E /* UDUserDefaultsModel.m */; };
 		0496E8042199870D001FF76E /* LHUserDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496E8032199870D001FF76E /* LHUserDefaultViewController.m */; };
+		04C6C69221BE5DEF00FEEF9A /* AutoLayoutOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C6C69021BE5DEF00FEEF9A /* AutoLayoutOneVC.m */; };
+		04C6C69321BE5DEF00FEEF9A /* AutoLayoutOneVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C6C69121BE5DEF00FEEF9A /* AutoLayoutOneVC.xib */; };
+		04C6C69521BE636D00FEEF9A /* image1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04C6C69421BE636D00FEEF9A /* image1.jpeg */; };
+		04D33A3D21C25D0000E597DE /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D33A3C21C25D0000E597DE /* MVVMViewController.m */; };
+		04D33A4721C25D4000E597DE /* MVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D33A3F21C25D4000E597DE /* MVVMViewModel.m */; };
+		04D33A4821C25D4000E597DE /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D33A4021C25D4000E597DE /* BaseViewModel.m */; };
+		04D33A4921C25D4000E597DE /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D33A4221C25D4000E597DE /* Model.m */; };
+		04D33A4A21C25D4000E597DE /* MVVMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D33A4421C25D4000E597DE /* MVVMView.m */; };
 		04E0540A2189A46A00EFD3CE /* GetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E054082189A46A00EFD3CE /* GetVC.m */; };
 		04E49D9E218165DA0092AFB9 /* ARToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E49D9A218165DA0092AFB9 /* ARToastView.m */; };
 		04E49D9F218165DA0092AFB9 /* UIView+MJAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E49D9B218165DA0092AFB9 /* UIView+MJAlertView.m */; };
@@ -452,6 +460,20 @@
 		0496E7FF219986CA001FF76E /* UDUserDefaultsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDUserDefaultsModel.m; sourceTree = "<group>"; };
 		0496E8022199870D001FF76E /* LHUserDefaultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHUserDefaultViewController.h; sourceTree = "<group>"; };
 		0496E8032199870D001FF76E /* LHUserDefaultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHUserDefaultViewController.m; sourceTree = "<group>"; };
+		04C6C68F21BE5DEF00FEEF9A /* AutoLayoutOneVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLayoutOneVC.h; sourceTree = "<group>"; };
+		04C6C69021BE5DEF00FEEF9A /* AutoLayoutOneVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutOneVC.m; sourceTree = "<group>"; };
+		04C6C69121BE5DEF00FEEF9A /* AutoLayoutOneVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoLayoutOneVC.xib; sourceTree = "<group>"; };
+		04C6C69421BE636D00FEEF9A /* image1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpeg; sourceTree = "<group>"; };
+		04D33A3B21C25D0000E597DE /* MVVMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMViewController.h; sourceTree = "<group>"; };
+		04D33A3C21C25D0000E597DE /* MVVMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewController.m; sourceTree = "<group>"; };
+		04D33A3F21C25D4000E597DE /* MVVMViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMViewModel.m; sourceTree = "<group>"; };
+		04D33A4021C25D4000E597DE /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		04D33A4121C25D4000E597DE /* MVVMView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMView.h; sourceTree = "<group>"; };
+		04D33A4221C25D4000E597DE /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		04D33A4321C25D4000E597DE /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		04D33A4421C25D4000E597DE /* MVVMView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMView.m; sourceTree = "<group>"; };
+		04D33A4521C25D4000E597DE /* MVVMViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMViewModel.h; sourceTree = "<group>"; };
+		04D33A4621C25D4000E597DE /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
 		04E054082189A46A00EFD3CE /* GetVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetVC.m; sourceTree = "<group>"; };
 		04E054092189A46A00EFD3CE /* GetVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetVC.h; sourceTree = "<group>"; };
 		04E49D9A218165DA0092AFB9 /* ARToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARToastView.m; sourceTree = "<group>"; };
@@ -1114,6 +1136,42 @@
 			path = "iOS-Objc";
 			sourceTree = "<group>";
 		};
+		04C6C68E21BE5D9C00FEEF9A /* AutoLayou进阶 */ = {
+			isa = PBXGroup;
+			children = (
+				04C6C69421BE636D00FEEF9A /* image1.jpeg */,
+				04C6C68F21BE5DEF00FEEF9A /* AutoLayoutOneVC.h */,
+				04C6C69021BE5DEF00FEEF9A /* AutoLayoutOneVC.m */,
+				04C6C69121BE5DEF00FEEF9A /* AutoLayoutOneVC.xib */,
+			);
+			path = "AutoLayou进阶";
+			sourceTree = "<group>";
+		};
+		04D33A3A21C25B5E00E597DE /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				04D33A3E21C25D4000E597DE /* Home */,
+				04D33A3B21C25D0000E597DE /* MVVMViewController.h */,
+				04D33A3C21C25D0000E597DE /* MVVMViewController.m */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		04D33A3E21C25D4000E597DE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				04D33A4621C25D4000E597DE /* BaseViewModel.h */,
+				04D33A4021C25D4000E597DE /* BaseViewModel.m */,
+				04D33A3F21C25D4000E597DE /* MVVMViewModel.m */,
+				04D33A4521C25D4000E597DE /* MVVMViewModel.h */,
+				04D33A4121C25D4000E597DE /* MVVMView.h */,
+				04D33A4421C25D4000E597DE /* MVVMView.m */,
+				04D33A4321C25D4000E597DE /* Model.h */,
+				04D33A4221C25D4000E597DE /* Model.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		04E054072189A46A00EFD3CE /* 找到控制器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1312,6 +1370,7 @@
 		8457D794204F680C002FF42A /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				04D33A3A21C25B5E00E597DE /* MVVM */,
 				843D6E89204FCD4F004AC950 /* MineViewController.h */,
 				843D6E8A204FCD4F004AC950 /* MineViewController.m */,
 			);
@@ -1360,6 +1419,7 @@
 		8457D7A0204F750D002FF42A /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				04C6C68E21BE5D9C00FEEF9A /* AutoLayou进阶 */,
 				0452FAF821B12921000D8F6F /* 获取通讯联系人 */,
 				04497EF221AE5F8B008017DC /* XLImage */,
 				0449202721AD28900027D5D6 /* XlForms */,
@@ -1692,6 +1752,7 @@
 				0452FB0E21B5237D000D8F6F /* ActionFormCell.xib in Resources */,
 				04497F0721AE60B8008017DC /* 8.png in Resources */,
 				043236A0218C1DCE0049C358 /* RadioButton-Selected.png in Resources */,
+				04C6C69321BE5DEF00FEEF9A /* AutoLayoutOneVC.xib in Resources */,
 				0406B84221815E4D006CED81 /* backPhoto@2x.png in Resources */,
 				04497F1421AE60B8008017DC /* Checkmark@2x.png in Resources */,
 				04E49DBD21816C990092AFB9 /* line.png in Resources */,
@@ -1706,6 +1767,7 @@
 				04497F0921AE60B8008017DC /* 12.png in Resources */,
 				0406B83521815E4D006CED81 /* sureCamera@2x.png in Resources */,
 				0406B83221815E4C006CED81 /* cancleCamera@3x.png in Resources */,
+				04C6C69521BE636D00FEEF9A /* image1.jpeg in Resources */,
 				04345C582192C5BF005F5765 /* BigImgVVC.xib in Resources */,
 				04E49DB921816C990092AFB9 /* line@2x.png in Resources */,
 				0406B83321815E4C006CED81 /* canclePhoto@3x.png in Resources */,
@@ -1862,9 +1924,11 @@
 				04497EF021AE5CE9008017DC /* XLImageViewerItem.m in Sources */,
 				0406B80C2181591E006CED81 /* UITextField+UITextField_Factory.m in Sources */,
 				0449201421AD27C60027D5D6 /* XLFormRowDescriptor.m in Sources */,
+				04D33A4721C25D4000E597DE /* MVVMViewModel.m in Sources */,
 				0449201721AD27C60027D5D6 /* XLFormOptionsViewController.m in Sources */,
 				858434C420842C7200C4C114 /* NewWebViewController.m in Sources */,
 				84D94AFB204E2DEB00A295B3 /* ViewController.m in Sources */,
+				04D33A4821C25D4000E597DE /* BaseViewModel.m in Sources */,
 				855C68A2209B02DD00D17990 /* GuidPageControlView.m in Sources */,
 				04345C572192C5BF005F5765 /* BigImgVVC.m in Sources */,
 				0449201C21AD27C60027D5D6 /* NSExpression+XLFormAdditions.m in Sources */,
@@ -1884,6 +1948,7 @@
 				0449202321AD27C60027D5D6 /* UIView+XLFormAdditions.m in Sources */,
 				04497EEE21AE5CE9008017DC /* XLImageLoading.m in Sources */,
 				04497EF121AE5CE9008017DC /* XLImageViewer.m in Sources */,
+				04D33A4921C25D4000E597DE /* Model.m in Sources */,
 				0449201521AD27C60027D5D6 /* XLFormDescriptor.m in Sources */,
 				852C383D207B5AB70088A812 /* UIView+Tap.m in Sources */,
 				0449201321AD27C60027D5D6 /* XLFormSectionDescriptor.m in Sources */,
@@ -1910,6 +1975,7 @@
 				0449201E21AD27C60027D5D6 /* XLFormRightImageButton.m in Sources */,
 				0406B80D2181591E006CED81 /* UIView+UITableView_Factory.m in Sources */,
 				84B9DF6F2058AE0D00B554E7 /* UILabel+Extension.m in Sources */,
+				04D33A4A21C25D4000E597DE /* MVVMView.m in Sources */,
 				0406B80B2181591E006CED81 /* UITableView+UItableView_TableviewFactory.m in Sources */,
 				84B9DF6D2058AE0D00B554E7 /* UIColor+JMExtension.m in Sources */,
 				858434C520842C7200C4C114 /* MTWebProgressLayer.m in Sources */,
@@ -1943,6 +2009,7 @@
 				84D94AF5204E2DEB00A295B3 /* main.m in Sources */,
 				0406B80F2181591E006CED81 /* UIButton+UIButton_Factory.m in Sources */,
 				0449200421AD27C60027D5D6 /* XLFormStepCounterCell.m in Sources */,
+				04C6C69221BE5DEF00FEEF9A /* AutoLayoutOneVC.m in Sources */,
 				8532875E2071CD39008C7A14 /* BaseTabViewController.m in Sources */,
 				04323688218AEE620049C358 /* AssetsTableViewDataSource.m in Sources */,
 				0452FB0821B517BF000D8F6F /* TextViewFormCell.m in Sources */,
@@ -1954,6 +2021,7 @@
 				84191BA9205750F600DBA00F /* UIView+SDExtension.m in Sources */,
 				0496E8042199870D001FF76E /* LHUserDefaultViewController.m in Sources */,
 				0432368E218AF6560049C358 /* TableViewModel.m in Sources */,
+				04D33A3D21C25D0000E597DE /* MVVMViewController.m in Sources */,
 				841FB7022068976900E06AC0 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				0449202021AD27C60027D5D6 /* XLFormRowNavigationAccessoryView.m in Sources */,
 				C5A0C8F92086C8C40027192B /* MyAlertView.m in Sources */,

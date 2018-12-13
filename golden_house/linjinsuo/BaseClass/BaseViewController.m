@@ -141,11 +141,12 @@
 #pragma mark - 设置顶部标题
 - (void)setTitleName:(NSString *)title
 {
-    self.label = [[UILabel alloc]initWithFrame:CGRectMake(40, screenTopHeight, viewWidth-80, screenNavHeight)];
+    self.label = [[UILabel alloc]initWithFrame:CGRectMake(40, screenTopHeight, DEVICE_WIDTH-80, screenNavHeight)];
     self.label.text = title;
     self.label.textColor = [UIColor whiteColor];
     self.label.font = LHTitleFont(18);
     self.label.textAlignment = NSTextAlignmentCenter;
+//    self.label.backgroundColor = LHRedColor;
     
     [self.image addSubview:self.label];
 }
