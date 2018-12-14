@@ -28,34 +28,44 @@ static NSString *const reuserId = @"reuserId";
     // Do any additional setup after loading the view.
     
     [self setTitleName:@"MVVM"];
+    [self setBackLeftButton:@""];
     [self setRightImage:@"刷新" image:@""];
     
     
-    UIView *view = [UIView viewWithFrame:CGRectMake(0, topHeight, 200, 200) backgroundColor:LHRedColor borderColor:nil cornerRadius:0];
-    [self.view addSubview:view];
+//    UIView *view = [UIView viewWithFrame:CGRectMake(0, topHeight, 200, 200) backgroundColor:LHRedColor borderColor:nil cornerRadius:0];
+//    [self.view addSubview:view];
     
-//    [self.view addSubview:self.tableView];
-//    self.tableView.dataSource = self;
-//    self.tableView.delegate = self;
-//    
-//    __weak typeof(self) weakSelf = self;
-//    self.vm = [[MVVMViewModel alloc] init];
-//    [self.vm initWithBlock:^(id data) {
-//        NSArray *array = data;
-//        [weakSelf.dataArray removeAllObjects];
-//        [weakSelf.dataArray addObjectsFromArray:array];
-//        MVVMView *headView = [[MVVMView alloc] initWithFrame:CGRectMake(0,topHeight, SCREEN_WIDTH, (array.count + 1)/4*50)];
-//        [headView headViewWithData:array];
-//        weakSelf.tableView.tableHeaderView = headView;
-//        [weakSelf.tableView reloadData];
-//        
-//    } fail:nil];
+    [self.view addSubview:self.tableView];
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    
+    __weak typeof(self) weakSelf = self;
+    self.vm = [[MVVMViewModel alloc] init];
+    [self.vm initWithBlock:^(id data) {
+        NSArray *array = data;
+        [weakSelf.dataArray removeAllObjects];
+        [weakSelf.dataArray addObjectsFromArray:array];
+        MVVMView *headView = [[MVVMView alloc] initWithFrame:CGRectMake(0,topHeight, SCREEN_WIDTH, (array.count + 1)/4*50)];
+        [headView headViewWithData:array];
+        weakSelf.tableView.tableHeaderView = headView;
+        [weakSelf.tableView reloadData];
+        
+    } fail:nil];
+    
+    
+    [self.vm initWithBlock:^(id data) {
+        
+    } fail:^(id data) {
+        
+    }];
     
 }
-
+// bsaeViewController 
 - (void)RightTextClick:(UIButton *)sender
 {
     NSLog(@"1212121212212")
+    [self.vm loadData];
+
 }
 
 #pragma mark - tableViewDataSource
@@ -96,7 +106,7 @@ static NSString *const reuserId = @"reuserId";
 
 - (UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, topHeight, SCREEN_WIDTH, SCREEN_HEIGHT-topHeight) style:UITableViewStylePlain];
         _tableView.backgroundColor = [UIColor whiteColor];
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:reuserId];
     }
