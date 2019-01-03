@@ -14,7 +14,10 @@ pod ‘IQKeyboardManager’
 pod 'WMPageController'
 pod 'Bugly'
 
-pod 'ReactiveObjC'     
+pod 'ReactiveObjC'
+
+pod 'JHNoDataEmptyView'
+
 
 end
 

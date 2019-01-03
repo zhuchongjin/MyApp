@@ -165,6 +165,7 @@
 		04E49DC121816C990092AFB9 /* Qcodesound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 04E49DB121816C990092AFB9 /* Qcodesound.caf */; };
 		04E49DC321818A830092AFB9 /* OC代码规范总结.md in Resources */ = {isa = PBXBuildFile; fileRef = 04E49DC221818A820092AFB9 /* OC代码规范总结.md */; };
 		04E49E0B2181B47A0092AFB9 /* ViewTapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E49E0A2181B47A0092AFB9 /* ViewTapVC.m */; };
+		04F044AC21DDA7BC00326311 /* NoDataTableviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F044AB21DDA7BC00326311 /* NoDataTableviewVC.m */; };
 		8414DB34205208CB0060FFD7 /* NoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414DB33205208CA0060FFD7 /* NoDataView.m */; };
 		84191BA3205750F600DBA00F /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84191B96205750F600DBA00F /* TAAbstractDotView.m */; };
 		84191BA4205750F600DBA00F /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84191B98205750F600DBA00F /* TAAnimatedDotView.m */; };
@@ -500,6 +501,8 @@
 		04E49DC221818A820092AFB9 /* OC代码规范总结.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "OC代码规范总结.md"; sourceTree = "<group>"; };
 		04E49E092181B47A0092AFB9 /* ViewTapVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewTapVC.h; sourceTree = "<group>"; };
 		04E49E0A2181B47A0092AFB9 /* ViewTapVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewTapVC.m; sourceTree = "<group>"; };
+		04F044AA21DDA7BC00326311 /* NoDataTableviewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoDataTableviewVC.h; sourceTree = "<group>"; };
+		04F044AB21DDA7BC00326311 /* NoDataTableviewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoDataTableviewVC.m; sourceTree = "<group>"; };
 		14CE975782BD312BF233F58A /* Pods-linjinsuo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-linjinsuo.release.xcconfig"; path = "Pods/Target Support Files/Pods-linjinsuo/Pods-linjinsuo.release.xcconfig"; sourceTree = "<group>"; };
 		660F0981089280D2FD44FD9C /* Pods-linjinsuo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-linjinsuo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-linjinsuo/Pods-linjinsuo.debug.xcconfig"; sourceTree = "<group>"; };
 		8414DB32205208CA0060FFD7 /* NoDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoDataView.h; sourceTree = "<group>"; };
@@ -1240,6 +1243,15 @@
 			path = ORCodeView;
 			sourceTree = "<group>";
 		};
+		04F044A921DDA75600326311 /* tableview空数据提示 */ = {
+			isa = PBXGroup;
+			children = (
+				04F044AA21DDA7BC00326311 /* NoDataTableviewVC.h */,
+				04F044AB21DDA7BC00326311 /* NoDataTableviewVC.m */,
+			);
+			path = "tableview空数据提示";
+			sourceTree = "<group>";
+		};
 		8414DB31205208CA0060FFD7 /* EmptyView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1419,6 +1431,7 @@
 		8457D7A0204F750D002FF42A /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				04F044A921DDA75600326311 /* tableview空数据提示 */,
 				04C6C68E21BE5D9C00FEEF9A /* AutoLayou进阶 */,
 				0452FAF821B12921000D8F6F /* 获取通讯联系人 */,
 				04497EF221AE5F8B008017DC /* XLImage */,
@@ -1969,6 +1982,7 @@
 				852C3840207B5AED0088A812 /* UIButton+Addition.m in Sources */,
 				84191BA5205750F600DBA00F /* TADotView.m in Sources */,
 				0449200C21AD27C60027D5D6 /* XLFormImageCell.m in Sources */,
+				04F044AC21DDA7BC00326311 /* NoDataTableviewVC.m in Sources */,
 				043236A1218C1DCE0049C358 /* GZFRadioCheckBox.m in Sources */,
 				0406B8082181591E006CED81 /* BYFoundationLog.m in Sources */,
 				04497F1721AE64E3008017DC /* ShowLocalImagesDemoVC.m in Sources */,
