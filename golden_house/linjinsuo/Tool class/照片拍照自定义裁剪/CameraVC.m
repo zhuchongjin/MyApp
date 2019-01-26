@@ -8,6 +8,7 @@
 
 #import "CameraVC.h"
 #import "CameraViewController.h"
+#import "GetPhoto.h"
 @interface CameraVC ()<CameraDelegate>
 
 @property(nonatomic, strong) CameraViewController *cameraViewvController;
@@ -31,7 +32,23 @@
     [btn addTarget:self action:@selector(cameraAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     
+    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn1.frame = CGRectMake(100, 200, 100, 100);
+    btn1.backgroundColor = [UIColor lightGrayColor];
+    [btn1 addTarget:self action:@selector(cameraAction1) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn1];
+    
     [self.view addSubview:self.imgeView];
+}
+
+- (void)cameraAction1
+{
+   
+    [GetPhoto getPhoto:self completion:^(UIImage *curImage, NSData *imageData) {
+        
+        [UIView addMJNotifierWithText:@"+++++++" dismissAutomatically:YES];
+    }];
+    
 }
 
 
@@ -65,6 +82,10 @@
     }
     return _imgeView;
 }
+
+
+
+
 
 /*
 #pragma mark - Navigation

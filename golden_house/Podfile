@@ -16,7 +16,7 @@ pod 'Bugly'
 
 pod 'ReactiveObjC'
 
-pod 'JHNoDataEmptyView'
+#pod 'JHNoDataEmptyView'
 
 
 end
