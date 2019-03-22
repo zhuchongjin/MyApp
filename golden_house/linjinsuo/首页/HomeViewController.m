@@ -25,6 +25,10 @@
 #import "XLImageVC.h"
 
 #import "AutoLayoutOneVC.h"
+#import "UIbuttonVC.h"
+
+#import "ZJPickerView.h"
+#import "UIColor+ZJ.h"
 
 
 
@@ -73,7 +77,7 @@
         cell.contentMode = UITableViewCellAccessoryNone;
         
     }
-    cell.textLabel.text = self.arrTitles[indexPath.row];
+    cell.textLabel.text = LHStringWithFormat(@"%ld %@",(long)indexPath.row,self.arrTitles[indexPath.row]);
     cell.imageView.transform = CGAffineTransformMakeScale(.6, .6);
     cell.imageView.image = LHIconImageInfoMake(self.arrImgs[indexPath.row], 35, LHRandomColor);
 //    cell.separatorInset = UIEdgeInsetsMake(0.3f, 40.0f, 0.0f,0.0f);
@@ -193,6 +197,15 @@
             vc = [[AutoLayoutOneVC alloc]init];
             [self pushVc:vc];
             break;
+            
+        case 18:
+            vc = [[UIbuttonVC alloc]init];
+            [self pushVc:vc];
+            break;
+        // 选择器
+        case 19:
+            [self payTypePickViewArray];
+            break;
         default:
             break;
     }
@@ -201,18 +214,50 @@
 #pragma make -------- 初始化
 - (NSArray *)arrTitles{
     if (!_arrTitles) {
-        _arrTitles = @[@"0 IconFont的用法",@"1 shareView分享",@"2 音声调节",@"3 相机拍照剪裁,相册选择照片等",@"4 提示框1",@"5 提示框2",@"6 二维码扫描扫描区域可调",@"7 UIview+tap 图片剪裁切割",@"8单选按钮实现",@"9图片点击放大缩小",@"10弹出框",@"11分段控制器",@"12分段控制自定义",@"13 LCUserDefaultsModel 代替简单UserDefault ",@"14 XLFrom布局",@"15 仿今日头条图片浏览工具，支持下滑返回 ",@"获取通讯录联系人信息",@"AutoLayout进阶1"];
+        _arrTitles = @[@" IconFont的用法",@" shareView分享",@" 音声调节",@" 相机拍照剪裁,相册选择照片等",@" 提示框1",@" 提示框2",@" 二维码扫描扫描区域可调",@" UIview+tap 图片剪裁切割",@" 单选按钮实现",@" 图片点击放大缩小",@" 弹出框",@" 分段控制器",@" 分段控制自定义",@" LCUserDefaultsModel 代替简单UserDefault ",@" XLFrom布局",@" 仿今日头条图片浏览工具，支持下滑返回 ",@"获取通讯录联系人信息",@" AutoLayout进阶1",@" UIbutton图文排列上下左右",@"选择器"];
     }
     return _arrTitles;
 }
 
-- (NSArray *)arrImgs{
-    if (!_arrImgs) {
-        _arrImgs = @[@"\U0000e60f",@"\U0000e684",@"\U0000e61f",@"\U0000e62c",@"\U0000e652",@"\U0000e612",@"\U0000e602",@"\U0000e7a6",@"\U0000e60a",@"\U0000e652",@"\U0000e61f",@"\U0000e6a7",@"\U0000e684",@"\U0000e62c",@"\U0000e68d",@"\U0000e620",@"\U0000e604",@"\U0000e757",@"\U0000e62e",@"\U0000e62e",@"\U0000e600",@"\U0000e60d",@"\U0000e64b",@"\U0000e60f",@"\U0000e624",@"\U0000e605",@"\U0000e657",@"\U0000e60f",@"\U0000e684",@"\U0000e61f",@"\U0000e62c",@"\U0000e652",@"\U0000e612",@"\U0000e602",@"\U0000e7a6",@"\U0000e60a",@"\U0000e652",@"\U0000e61f",@"\U0000e6a7",@"\U0000e684",@"\U0000e62c",@"\U0000e68d",@"\U0000e620",@"\U0000e604",@"\U0000e757",@"\U0000e62e",@"\U0000e62e",@"\U0000e600",@"\U0000e60d",@"\U0000e64b",@"\U0000e60f",@"\U0000e624",@"\U0000e605",@"\U0000e657"];
-    }
-    return _arrImgs;
+- (void)payTypePickViewArray{
+    
+    NSArray *arr = @[@"支付宝",@"微信",@"银联支付",@"POS机支付"];
+    [self initPayTypePickViewWithArray:arr];
 }
 
+- (void)initPayTypePickViewWithArray:(NSArray *)dataList{
+    
+    NSDictionary *propertyDict = @{ZJPickerViewPropertyCanceBtnTitleKey : @"取消",
+                                   ZJPickerViewPropertySureBtnTitleKey  : @"确定",
+                                   //                                    ZJPickerViewPropertyTipLabelTextKey  : [_selectContentLabel.text substringFromIndex:5], // @"提示内容"
+                                   ZJPickerViewPropertyCanceBtnTitleColorKey : [UIColor zj_colorWithHexString:@"#A9A9A9"],
+                                   ZJPickerViewPropertySureBtnTitleColorKey : [UIColor zj_colorWithHexString:@"#FF6347"],
+                                   ZJPickerViewPropertyTipLabelTextColorKey : [UIColor zj_colorWithHexString:@"#231F20"],
+                                   ZJPickerViewPropertyLineViewBackgroundColorKey : [UIColor zj_colorWithHexString:@"#dedede"],
+                                   ZJPickerViewPropertyCanceBtnTitleFontKey : [UIFont systemFontOfSize:17.0f],
+                                   ZJPickerViewPropertySureBtnTitleFontKey : [UIFont systemFontOfSize:17.0f],
+                                   ZJPickerViewPropertyTipLabelTextFontKey : [UIFont systemFontOfSize:17.0f],
+                                   ZJPickerViewPropertyPickerViewHeightKey : @250.0f,
+                                   ZJPickerViewPropertyOneComponentRowHeightKey : @40.0f,
+                                   ZJPickerViewPropertySelectRowTitleAttrKey : @{NSForegroundColorAttributeName : [UIColor zj_colorWithHexString:@"#FF6347"], NSFontAttributeName : [UIFont systemFontOfSize:20.0f]},
+                                   ZJPickerViewPropertyUnSelectRowTitleAttrKey : @{NSForegroundColorAttributeName : [UIColor zj_colorWithHexString:@"#A9A9A9"], NSFontAttributeName : [UIFont systemFontOfSize:20.0f]},
+                                   ZJPickerViewPropertySelectRowLineBackgroundColorKey : [UIColor zj_colorWithHexString:@"#dedede"],
+                                   ZJPickerViewPropertyIsTouchBackgroundHideKey : @YES,
+                                   ZJPickerViewPropertyIsShowSelectContentKey : @YES,
+                                   ZJPickerViewPropertyIsScrollToSelectedRowKey: @YES,
+                                   ZJPickerViewPropertyIsAnimationShowKey : @YES};
+    
+    [ZJPickerView zj_showWithDataList:dataList propertyDict:propertyDict completion:^(NSString * _Nullable selectContent) {
+        
+        
+        NSInteger index = [dataList indexOfObject:selectContent];
+         NSLog(@"%@",selectContent);
+         NSLog(@"%ld",(long)index);
+  
+
+    }];
+    
+}
 
 
 
@@ -301,6 +346,12 @@
     [self.view addSubview:tableView];
     self.tableView = tableView;
     
+}
+- (NSArray *)arrImgs{
+    if (!_arrImgs) {
+        _arrImgs = @[@"\U0000e60f",@"\U0000e684",@"\U0000e61f",@"\U0000e62c",@"\U0000e652",@"\U0000e612",@"\U0000e602",@"\U0000e7a6",@"\U0000e60a",@"\U0000e652",@"\U0000e61f",@"\U0000e6a7",@"\U0000e684",@"\U0000e62c",@"\U0000e68d",@"\U0000e620",@"\U0000e604",@"\U0000e757",@"\U0000e62e",@"\U0000e62e",@"\U0000e600",@"\U0000e60d",@"\U0000e64b",@"\U0000e60f",@"\U0000e624",@"\U0000e605",@"\U0000e657",@"\U0000e60f",@"\U0000e684",@"\U0000e61f",@"\U0000e62c",@"\U0000e652",@"\U0000e612",@"\U0000e602",@"\U0000e7a6",@"\U0000e60a",@"\U0000e652",@"\U0000e61f",@"\U0000e6a7",@"\U0000e684",@"\U0000e62c",@"\U0000e68d",@"\U0000e620",@"\U0000e604",@"\U0000e757",@"\U0000e62e",@"\U0000e62e",@"\U0000e600",@"\U0000e60d",@"\U0000e64b",@"\U0000e60f",@"\U0000e624",@"\U0000e605",@"\U0000e657",@"\U0000e60f",@"\U0000e684",@"\U0000e61f",@"\U0000e62c",@"\U0000e652",@"\U0000e612",@"\U0000e602",@"\U0000e7a6",@"\U0000e60a",@"\U0000e652",@"\U0000e61f",@"\U0000e6a7",@"\U0000e684",@"\U0000e62c",@"\U0000e68d",@"\U0000e620",@"\U0000e604",@"\U0000e757",@"\U0000e62e",@"\U0000e62e",@"\U0000e600",@"\U0000e60d",@"\U0000e64b",@"\U0000e60f",@"\U0000e624",@"\U0000e605",@"\U0000e657",@"\U0000e60f",@"\U0000e684",@"\U0000e61f",@"\U0000e62c",@"\U0000e652",@"\U0000e612",@"\U0000e602",@"\U0000e7a6",@"\U0000e60a",@"\U0000e652",@"\U0000e61f",@"\U0000e6a7",@"\U0000e684",@"\U0000e62c",@"\U0000e68d",@"\U0000e620",@"\U0000e604",@"\U0000e757",@"\U0000e62e",@"\U0000e62e",@"\U0000e600",@"\U0000e60d",@"\U0000e64b",@"\U0000e60f",@"\U0000e624",@"\U0000e605",@"\U0000e657"];
+    }
+    return _arrImgs;
 }
 
 @end

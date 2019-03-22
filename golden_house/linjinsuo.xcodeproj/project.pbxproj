@@ -138,6 +138,10 @@
 		0496E800219986CA001FF76E /* LCUserDefaultsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496E7FB219986CA001FF76E /* LCUserDefaultsModel.m */; };
 		0496E801219986CA001FF76E /* UDUserDefaultsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496E7FF219986CA001FF76E /* UDUserDefaultsModel.m */; };
 		0496E8042199870D001FF76E /* LHUserDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496E8032199870D001FF76E /* LHUserDefaultViewController.m */; };
+		049C3E12222CAB8A00B1A44E /* MMButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 049C3E11222CAB8A00B1A44E /* MMButton.m */; };
+		049C3E15222CABEF00B1A44E /* UIbuttonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 049C3E14222CABEF00B1A44E /* UIbuttonVC.m */; };
+		049D5FA52244626D00B5D5F1 /* ZJPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D5FA12244626D00B5D5F1 /* ZJPickerView.m */; };
+		049D5FA62244626D00B5D5F1 /* UIColor+ZJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D5FA22244626D00B5D5F1 /* UIColor+ZJ.m */; };
 		04C6C69221BE5DEF00FEEF9A /* AutoLayoutOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C6C69021BE5DEF00FEEF9A /* AutoLayoutOneVC.m */; };
 		04C6C69321BE5DEF00FEEF9A /* AutoLayoutOneVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C6C69121BE5DEF00FEEF9A /* AutoLayoutOneVC.xib */; };
 		04C6C69521BE636D00FEEF9A /* image1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04C6C69421BE636D00FEEF9A /* image1.jpeg */; };
@@ -461,6 +465,14 @@
 		0496E7FF219986CA001FF76E /* UDUserDefaultsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDUserDefaultsModel.m; sourceTree = "<group>"; };
 		0496E8022199870D001FF76E /* LHUserDefaultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHUserDefaultViewController.h; sourceTree = "<group>"; };
 		0496E8032199870D001FF76E /* LHUserDefaultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHUserDefaultViewController.m; sourceTree = "<group>"; };
+		049C3E10222CAB8A00B1A44E /* MMButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMButton.h; sourceTree = "<group>"; };
+		049C3E11222CAB8A00B1A44E /* MMButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMButton.m; sourceTree = "<group>"; };
+		049C3E13222CABEF00B1A44E /* UIbuttonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIbuttonVC.h; sourceTree = "<group>"; };
+		049C3E14222CABEF00B1A44E /* UIbuttonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIbuttonVC.m; sourceTree = "<group>"; };
+		049D5FA12244626D00B5D5F1 /* ZJPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPickerView.m; sourceTree = "<group>"; };
+		049D5FA22244626D00B5D5F1 /* UIColor+ZJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZJ.m"; sourceTree = "<group>"; };
+		049D5FA32244626D00B5D5F1 /* UIColor+ZJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZJ.h"; sourceTree = "<group>"; };
+		049D5FA42244626D00B5D5F1 /* ZJPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPickerView.h; sourceTree = "<group>"; };
 		04C6C68F21BE5DEF00FEEF9A /* AutoLayoutOneVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLayoutOneVC.h; sourceTree = "<group>"; };
 		04C6C69021BE5DEF00FEEF9A /* AutoLayoutOneVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutOneVC.m; sourceTree = "<group>"; };
 		04C6C69121BE5DEF00FEEF9A /* AutoLayoutOneVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoLayoutOneVC.xib; sourceTree = "<group>"; };
@@ -1139,6 +1151,28 @@
 			path = "iOS-Objc";
 			sourceTree = "<group>";
 		};
+		049C3E0F222CAAB600B1A44E /* UIbutton图文排列上下左右 */ = {
+			isa = PBXGroup;
+			children = (
+				049C3E10222CAB8A00B1A44E /* MMButton.h */,
+				049C3E11222CAB8A00B1A44E /* MMButton.m */,
+				049C3E13222CABEF00B1A44E /* UIbuttonVC.h */,
+				049C3E14222CABEF00B1A44E /* UIbuttonVC.m */,
+			);
+			path = "UIbutton图文排列上下左右";
+			sourceTree = "<group>";
+		};
+		049D5FA02244626D00B5D5F1 /* 选择器 */ = {
+			isa = PBXGroup;
+			children = (
+				049D5FA12244626D00B5D5F1 /* ZJPickerView.m */,
+				049D5FA22244626D00B5D5F1 /* UIColor+ZJ.m */,
+				049D5FA32244626D00B5D5F1 /* UIColor+ZJ.h */,
+				049D5FA42244626D00B5D5F1 /* ZJPickerView.h */,
+			);
+			path = "选择器";
+			sourceTree = "<group>";
+		};
 		04C6C68E21BE5D9C00FEEF9A /* AutoLayou进阶 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1431,6 +1465,8 @@
 		8457D7A0204F750D002FF42A /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				049D5FA02244626D00B5D5F1 /* 选择器 */,
+				049C3E0F222CAAB600B1A44E /* UIbutton图文排列上下左右 */,
 				04F044A921DDA75600326311 /* tableview空数据提示 */,
 				04C6C68E21BE5D9C00FEEF9A /* AutoLayou进阶 */,
 				0452FAF821B12921000D8F6F /* 获取通讯联系人 */,
@@ -1928,6 +1964,7 @@
 				0406B80E2181591E006CED81 /* UIView+UIView_Factory.m in Sources */,
 				0406B80A2181591E006CED81 /* UILabel+UILabel_Factory.m in Sources */,
 				0449200821AD27C60027D5D6 /* XLFormBaseCell.m in Sources */,
+				049C3E15222CABEF00B1A44E /* UIbuttonVC.m in Sources */,
 				84B9DF7320591B3200B554E7 /* UIView+HXExtension.m in Sources */,
 				0449200F21AD27C60027D5D6 /* XLFormDateCell.m in Sources */,
 				0406B8092181591E006CED81 /* UIImageView+UIImageView_Factory.m in Sources */,
@@ -1971,6 +2008,7 @@
 				84191BA8205750F600DBA00F /* SDCycleScrollView.m in Sources */,
 				0449201121AD27C60027D5D6 /* XLFormTextFieldCell.m in Sources */,
 				855C68A1209B02DD00D17990 /* JMGuidViewController.m in Sources */,
+				049D5FA52244626D00B5D5F1 /* ZJPickerView.m in Sources */,
 				0406B84721815EA7006CED81 /* CameraVC.m in Sources */,
 				0432368B218AEF6E0049C358 /* AssetsTableViewDelegate.m in Sources */,
 				0496E801219986CA001FF76E /* UDUserDefaultsModel.m in Sources */,
@@ -1978,11 +2016,13 @@
 				0406B7F621815888006CED81 /* VolumeChangeVC.m in Sources */,
 				0406B82F21815E4C006CED81 /* CameraViewController.m in Sources */,
 				C55B8A83207C6A9E00DCAF7D /* LMJDropdownMenu.m in Sources */,
+				049D5FA62244626D00B5D5F1 /* UIColor+ZJ.m in Sources */,
 				0406B82E21815E4C006CED81 /* ClipViewController.m in Sources */,
 				852C3840207B5AED0088A812 /* UIButton+Addition.m in Sources */,
 				84191BA5205750F600DBA00F /* TADotView.m in Sources */,
 				0449200C21AD27C60027D5D6 /* XLFormImageCell.m in Sources */,
 				04F044AC21DDA7BC00326311 /* NoDataTableviewVC.m in Sources */,
+				049C3E12222CAB8A00B1A44E /* MMButton.m in Sources */,
 				043236A1218C1DCE0049C358 /* GZFRadioCheckBox.m in Sources */,
 				0406B8082181591E006CED81 /* BYFoundationLog.m in Sources */,
 				04497F1721AE64E3008017DC /* ShowLocalImagesDemoVC.m in Sources */,

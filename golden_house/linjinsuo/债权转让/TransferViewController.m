@@ -24,11 +24,23 @@
     [self setTitleName:@"债权转让"];
     [self checkNetWork];
     
-    [[HDNetworking sharedHDNetworking]POST:@"" parameters:nil success:^(id  _Nonnull responseObject) {
-        
-    } failure:^(NSError * _Nonnull error) {
-        
-    }];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 0)];
+    
+    label.backgroundColor = LHRedColor;
+    
+    label.text = @"我会自己去sugvsuvcusfxcysbkdcnsgfucngmryfdwsxjbnedkjfgvwyeer ctub yg适应";
+    
+    label.numberOfLines = 0;
+    
+    [label sizeToFit];
+    
+    [self.view addSubview:label];
+    
+//    [[HDNetworking sharedHDNetworking]POST:@"" parameters:nil success:^(id  _Nonnull responseObject) {
+//
+//    } failure:^(NSError * _Nonnull error) {
+//
+//    }];
 
 }
 
