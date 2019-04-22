@@ -46,15 +46,16 @@
     {
         _btn1 = [MMButton buttonWithType:UIButtonTypeCustom];
         [_btn1 setBackgroundColor:[UIColor lightGrayColor]];
-        [_btn1 setImage:[UIImage imageNamed:@"ic_tabbar_home_pressed"] forState:UIControlStateNormal];
+        [_btn1 setImage:[UIImage imageNamed:@"common_icon_sel"] forState:UIControlStateNormal];
         [_btn1 setTitle:@"快来按我" forState:UIControlStateNormal];
+        
         _btn1.frame = CGRectMake(0, 10, 100,100);
         _btn1.center = self.view.center;
         [_btn1 addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
-        [_btn1 setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-        [_btn1.titleLabel setFont:[UIFont systemFontOfSize:16]];
+        [_btn1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_btn1.titleLabel setFont:[UIFont systemFontOfSize:11]];
         _btn1.imageAlignment = MMImageAlignmentTop;
-        _btn1.spaceBetweenTitleAndImage = 4;
+        _btn1.spaceBetweenTitleAndImage = 10;
         
     }
     return _btn1;

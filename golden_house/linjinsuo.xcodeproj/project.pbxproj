@@ -49,11 +49,11 @@
 		0432369F218C1DCE0049C358 /* RadioButton-Unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 0432369C218C1DCE0049C358 /* RadioButton-Unselected.png */; };
 		043236A0218C1DCE0049C358 /* RadioButton-Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 0432369D218C1DCE0049C358 /* RadioButton-Selected.png */; };
 		043236A1218C1DCE0049C358 /* GZFRadioCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 0432369E218C1DCE0049C358 /* GZFRadioCheckBox.m */; };
+		0433D045225C8E7000DAFF2E /* PPMakerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0433D044225C8E7000DAFF2E /* PPMakerVC.m */; };
 		04345C502192C4E1005F5765 /* SYBigImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 04345C4E2192C4E0005F5765 /* SYBigImage.m */; };
 		04345C572192C5BF005F5765 /* BigImgVVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04345C552192C5BF005F5765 /* BigImgVVC.m */; };
 		04345C582192C5BF005F5765 /* BigImgVVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04345C562192C5BF005F5765 /* BigImgVVC.xib */; };
 		0449200121AD27C60027D5D6 /* XLForm.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04491FAB21AD27C60027D5D6 /* XLForm.bundle */; };
-		0449200221AD27C60027D5D6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04491FAC21AD27C60027D5D6 /* Info.plist */; };
 		0449200321AD27C60027D5D6 /* XLFormTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04491FB021AD27C60027D5D6 /* XLFormTextViewCell.m */; };
 		0449200421AD27C60027D5D6 /* XLFormStepCounterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04491FB221AD27C60027D5D6 /* XLFormStepCounterCell.m */; };
 		0449200521AD27C60027D5D6 /* XLFormSegmentedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04491FB321AD27C60027D5D6 /* XLFormSegmentedCell.m */; };
@@ -142,6 +142,11 @@
 		049C3E15222CABEF00B1A44E /* UIbuttonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 049C3E14222CABEF00B1A44E /* UIbuttonVC.m */; };
 		049D5FA52244626D00B5D5F1 /* ZJPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D5FA12244626D00B5D5F1 /* ZJPickerView.m */; };
 		049D5FA62244626D00B5D5F1 /* UIColor+ZJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D5FA22244626D00B5D5F1 /* UIColor+ZJ.m */; };
+		049D5FAA224467A800B5D5F1 /* CheckUpDateWithAppStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 049D5FA9224467A800B5D5F1 /* CheckUpDateWithAppStore.m */; };
+		04B229582251B954004C8E94 /* CheckUpDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B229562251B954004C8E94 /* CheckUpDateVC.m */; };
+		04B229592251B954004C8E94 /* CheckUpDateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B229572251B954004C8E94 /* CheckUpDateVC.xib */; };
+		04B229632252EBF7004C8E94 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B229612252EBF7004C8E94 /* RACViewController.m */; };
+		04B229642252EBF7004C8E94 /* RACViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B229622252EBF7004C8E94 /* RACViewController.xib */; };
 		04C6C69221BE5DEF00FEEF9A /* AutoLayoutOneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C6C69021BE5DEF00FEEF9A /* AutoLayoutOneVC.m */; };
 		04C6C69321BE5DEF00FEEF9A /* AutoLayoutOneVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C6C69121BE5DEF00FEEF9A /* AutoLayoutOneVC.xib */; };
 		04C6C69521BE636D00FEEF9A /* image1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04C6C69421BE636D00FEEF9A /* image1.jpeg */; };
@@ -306,6 +311,8 @@
 		0432369C218C1DCE0049C358 /* RadioButton-Unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RadioButton-Unselected.png"; sourceTree = "<group>"; };
 		0432369D218C1DCE0049C358 /* RadioButton-Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RadioButton-Selected.png"; sourceTree = "<group>"; };
 		0432369E218C1DCE0049C358 /* GZFRadioCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZFRadioCheckBox.m; sourceTree = "<group>"; };
+		0433D043225C8E7000DAFF2E /* PPMakerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPMakerVC.h; sourceTree = "<group>"; };
+		0433D044225C8E7000DAFF2E /* PPMakerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPMakerVC.m; sourceTree = "<group>"; };
 		04345C4E2192C4E0005F5765 /* SYBigImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYBigImage.m; sourceTree = "<group>"; };
 		04345C4F2192C4E1005F5765 /* SYBigImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYBigImage.h; sourceTree = "<group>"; };
 		04345C542192C5BF005F5765 /* BigImgVVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BigImgVVC.h; sourceTree = "<group>"; };
@@ -473,6 +480,14 @@
 		049D5FA22244626D00B5D5F1 /* UIColor+ZJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZJ.m"; sourceTree = "<group>"; };
 		049D5FA32244626D00B5D5F1 /* UIColor+ZJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZJ.h"; sourceTree = "<group>"; };
 		049D5FA42244626D00B5D5F1 /* ZJPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPickerView.h; sourceTree = "<group>"; };
+		049D5FA8224467A700B5D5F1 /* CheckUpDateWithAppStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckUpDateWithAppStore.h; sourceTree = "<group>"; };
+		049D5FA9224467A800B5D5F1 /* CheckUpDateWithAppStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckUpDateWithAppStore.m; sourceTree = "<group>"; };
+		04B229552251B954004C8E94 /* CheckUpDateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckUpDateVC.h; sourceTree = "<group>"; };
+		04B229562251B954004C8E94 /* CheckUpDateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckUpDateVC.m; sourceTree = "<group>"; };
+		04B229572251B954004C8E94 /* CheckUpDateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckUpDateVC.xib; sourceTree = "<group>"; };
+		04B229602252EBF7004C8E94 /* RACViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACViewController.h; sourceTree = "<group>"; };
+		04B229612252EBF7004C8E94 /* RACViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
+		04B229622252EBF7004C8E94 /* RACViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RACViewController.xib; sourceTree = "<group>"; };
 		04C6C68F21BE5DEF00FEEF9A /* AutoLayoutOneVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLayoutOneVC.h; sourceTree = "<group>"; };
 		04C6C69021BE5DEF00FEEF9A /* AutoLayoutOneVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutOneVC.m; sourceTree = "<group>"; };
 		04C6C69121BE5DEF00FEEF9A /* AutoLayoutOneVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AutoLayoutOneVC.xib; sourceTree = "<group>"; };
@@ -762,6 +777,15 @@
 				0432369D218C1DCE0049C358 /* RadioButton-Selected.png */,
 			);
 			path = img;
+			sourceTree = "<group>";
+		};
+		0433D03C225C8D0300DAFF2E /* PPMaker快速创建UI链式创建 */ = {
+			isa = PBXGroup;
+			children = (
+				0433D043225C8E7000DAFF2E /* PPMakerVC.h */,
+				0433D044225C8E7000DAFF2E /* PPMakerVC.m */,
+			);
+			path = "PPMaker快速创建UI链式创建";
 			sourceTree = "<group>";
 		};
 		04345C4D2192C49F005F5765 /* 图片点击放大所辖 */ = {
@@ -1173,6 +1197,28 @@
 			path = "选择器";
 			sourceTree = "<group>";
 		};
+		049D5FA72244677B00B5D5F1 /* iOS检测更新 */ = {
+			isa = PBXGroup;
+			children = (
+				049D5FA8224467A700B5D5F1 /* CheckUpDateWithAppStore.h */,
+				049D5FA9224467A800B5D5F1 /* CheckUpDateWithAppStore.m */,
+				04B229552251B954004C8E94 /* CheckUpDateVC.h */,
+				04B229562251B954004C8E94 /* CheckUpDateVC.m */,
+				04B229572251B954004C8E94 /* CheckUpDateVC.xib */,
+			);
+			path = "iOS检测更新";
+			sourceTree = "<group>";
+		};
+		04B2295F2252EB72004C8E94 /* RAC的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				04B229602252EBF7004C8E94 /* RACViewController.h */,
+				04B229612252EBF7004C8E94 /* RACViewController.m */,
+				04B229622252EBF7004C8E94 /* RACViewController.xib */,
+			);
+			path = "RAC的使用";
+			sourceTree = "<group>";
+		};
 		04C6C68E21BE5D9C00FEEF9A /* AutoLayou进阶 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1465,6 +1511,9 @@
 		8457D7A0204F750D002FF42A /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				0433D03C225C8D0300DAFF2E /* PPMaker快速创建UI链式创建 */,
+				04B2295F2252EB72004C8E94 /* RAC的使用 */,
+				049D5FA72244677B00B5D5F1 /* iOS检测更新 */,
 				049D5FA02244626D00B5D5F1 /* 选择器 */,
 				049C3E0F222CAAB600B1A44E /* UIbutton图文排列上下左右 */,
 				04F044A921DDA75600326311 /* tableview空数据提示 */,
@@ -1810,7 +1859,6 @@
 				0406B84321815E4D006CED81 /* surePhoto@3x.png in Resources */,
 				0406B83B21815E4D006CED81 /* cameraPhoto@3x.png in Resources */,
 				0406B83821815E4D006CED81 /* canclePhoto@2x.png in Resources */,
-				0449200221AD27C60027D5D6 /* Info.plist in Resources */,
 				0406B83E21815E4D006CED81 /* closeFlish@3x.png in Resources */,
 				04E49DBA21816C990092AFB9 /* ScanQR4@2x.png in Resources */,
 				04497F0921AE60B8008017DC /* 12.png in Resources */,
@@ -1841,8 +1889,10 @@
 				0496E7EC21996A73001FF76E /* PaiDanVC.xib in Resources */,
 				0406B83F21815E4D006CED81 /* closeFlish@2x.png in Resources */,
 				0449203821AD30100027D5D6 /* XLForm-Boolean.gif in Resources */,
+				04B229592251B954004C8E94 /* CheckUpDateVC.xib in Resources */,
 				04E49DBC21816C990092AFB9 /* ScanQR2@2x.png in Resources */,
 				84D94B00204E2DEB00A295B3 /* Assets.xcassets in Resources */,
+				04B229642252EBF7004C8E94 /* RACViewController.xib in Resources */,
 				04497F0D21AE60B8008017DC /* 5.png in Resources */,
 				0406B83D21815E4D006CED81 /* clipPhoto@2x.png in Resources */,
 				04E49DC121816C990092AFB9 /* Qcodesound.caf in Resources */,
@@ -1959,6 +2009,7 @@
 				0449202221AD27C60027D5D6 /* NSArray+XLFormAdditions.m in Sources */,
 				C55B8A84207C6A9E00DCAF7D /* GetPhoto.m in Sources */,
 				04345C502192C4E1005F5765 /* SYBigImage.m in Sources */,
+				049D5FAA224467A800B5D5F1 /* CheckUpDateWithAppStore.m in Sources */,
 				84191BA3205750F600DBA00F /* TAAbstractDotView.m in Sources */,
 				0449201F21AD27C60027D5D6 /* XLFormTextView.m in Sources */,
 				0406B80E2181591E006CED81 /* UIView+UIView_Factory.m in Sources */,
@@ -1992,6 +2043,7 @@
 				0452FB0321B51463000D8F6F /* SegmentFormCell.m in Sources */,
 				C55B8A82207C6A9E00DCAF7D /* SSPopup.m in Sources */,
 				852C383A207B58E30088A812 /* ShareManager.m in Sources */,
+				0433D045225C8E7000DAFF2E /* PPMakerVC.m in Sources */,
 				04497F1A21AE6500008017DC /* ShowNetImagesDemoVC.m in Sources */,
 				843D6E85204FCD29004AC950 /* HomeViewController.m in Sources */,
 				841FB7012068976900E06AC0 /* PagingViewController.m in Sources */,
@@ -2000,6 +2052,7 @@
 				04497EF121AE5CE9008017DC /* XLImageViewer.m in Sources */,
 				04D33A4921C25D4000E597DE /* Model.m in Sources */,
 				0449201521AD27C60027D5D6 /* XLFormDescriptor.m in Sources */,
+				04B229632252EBF7004C8E94 /* RACViewController.m in Sources */,
 				852C383D207B5AB70088A812 /* UIView+Tap.m in Sources */,
 				0449201321AD27C60027D5D6 /* XLFormSectionDescriptor.m in Sources */,
 				84B9DF702058AE0D00B554E7 /* UIView+Extension.m in Sources */,
@@ -2062,6 +2115,7 @@
 				04E49DBE21816C990092AFB9 /* LWQRCodeViewController.m in Sources */,
 				84D94AF5204E2DEB00A295B3 /* main.m in Sources */,
 				0406B80F2181591E006CED81 /* UIButton+UIButton_Factory.m in Sources */,
+				04B229582251B954004C8E94 /* CheckUpDateVC.m in Sources */,
 				0449200421AD27C60027D5D6 /* XLFormStepCounterCell.m in Sources */,
 				04C6C69221BE5DEF00FEEF9A /* AutoLayoutOneVC.m in Sources */,
 				8532875E2071CD39008C7A14 /* BaseTabViewController.m in Sources */,
@@ -2248,7 +2302,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/linjinsuo/PrefixHeader.pch";
 				INFOPLIST_FILE = linjinsuo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.apa.com.ctms-driver-douwaDis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2270,7 +2324,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/linjinsuo/PrefixHeader.pch";
 				INFOPLIST_FILE = linjinsuo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.apa.com.ctms-driver-douwaDis";
 				PRODUCT_NAME = "$(TARGET_NAME)";

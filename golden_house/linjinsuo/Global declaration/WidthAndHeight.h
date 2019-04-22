@@ -27,6 +27,17 @@
 #define topHeight self.navigationController.navigationBar.frame.size.height+[[UIApplication sharedApplication] statusBarFrame].size.height
 
 
+
+//// 最新设配
+#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#define kNavBarHeight 44.0
+#define kTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
+#define kTopHeight (kStatusBarHeight + kNavBarHeight)
+//根据ip6的屏幕来拉伸
+#define LW(with) ((with)*(kScreenWidth/375.0f))
+#define LH(height) ((height)*(kScreenHeight/667.0f))
+
+
 #define kLeftMargin 15
 
 #define TabBarHeight 49
