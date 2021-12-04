@@ -35,6 +35,7 @@
 #import "RACViewController.h"
 
 #import "PPMakerVC.h"
+#import "MenuListVC.h"
 
 
 
@@ -216,7 +217,10 @@
             
             vc = [[PPMakerVC alloc]init];
             [self pushVc:vc];
-            
+            break;
+        case 21:
+            vc = [MenuListVC new];
+            [self pushVc:vc];
             break;
         default:
             break;
@@ -226,7 +230,7 @@
 #pragma make -------- 初始化
 - (NSArray *)arrTitles{
     if (!_arrTitles) {
-        _arrTitles = @[@" IconFont的用法",@" shareView分享",@" 音声调节",@" 相机拍照剪裁,相册选择照片等",@" 提示框1",@" 提示框2",@" 二维码扫描扫描区域可调",@" UIview+tap 图片剪裁切割",@" 单选按钮实现",@" 图片点击放大缩小",@" 弹出框",@" 分段控制器",@" 分段控制自定义",@" LCUserDefaultsModel 代替简单UserDefault ",@" XLFrom布局",@" 仿今日头条图片浏览工具，支持下滑返回 ",@"获取通讯录联系人信息",@" AutoLayout进阶1",@" UIbutton图文排列上下左右",@"选择器",@"PPMaker快速创建UI链式创建"];
+        _arrTitles = @[@" IconFont的用法",@" shareView分享",@" 音声调节",@" 相机拍照剪裁,相册选择照片等",@" 提示框1",@" 提示框2",@" 二维码扫描扫描区域可调",@" UIview+tap 图片剪裁切割",@" 单选按钮实现",@" 图片点击放大缩小",@" 弹出框",@" 分段控制器",@" 分段控制自定义",@" LCUserDefaultsModel 代替简单UserDefault ",@" XLFrom布局",@" 仿今日头条图片浏览工具，支持下滑返回 ",@"获取通讯录联系人信息",@" AutoLayout进阶1",@" UIbutton图文排列上下左右",@"选择器",@"PPMaker快速创建UI链式创建" ,@"指定UI下拉列表"];
     }
     return _arrTitles;
 }

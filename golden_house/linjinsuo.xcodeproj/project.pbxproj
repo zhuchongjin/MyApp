@@ -175,6 +175,9 @@
 		04E49DC321818A830092AFB9 /* OC代码规范总结.md in Resources */ = {isa = PBXBuildFile; fileRef = 04E49DC221818A820092AFB9 /* OC代码规范总结.md */; };
 		04E49E0B2181B47A0092AFB9 /* ViewTapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E49E0A2181B47A0092AFB9 /* ViewTapVC.m */; };
 		04F044AC21DDA7BC00326311 /* NoDataTableviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F044AB21DDA7BC00326311 /* NoDataTableviewVC.m */; };
+		7D7342CE275AF3C500A8929F /* YCMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7342CD275AF3C500A8929F /* YCMenuView.m */; };
+		7D7342D2275AF3FC00A8929F /* MenuListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7342D0275AF3FC00A8929F /* MenuListVC.m */; };
+		7D7342D3275AF3FC00A8929F /* MenuListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D7342D1275AF3FC00A8929F /* MenuListVC.xib */; };
 		8414DB34205208CB0060FFD7 /* NoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414DB33205208CA0060FFD7 /* NoDataView.m */; };
 		84191BA3205750F600DBA00F /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84191B96205750F600DBA00F /* TAAbstractDotView.m */; };
 		84191BA4205750F600DBA00F /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84191B98205750F600DBA00F /* TAAnimatedDotView.m */; };
@@ -532,6 +535,11 @@
 		04F044AB21DDA7BC00326311 /* NoDataTableviewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoDataTableviewVC.m; sourceTree = "<group>"; };
 		14CE975782BD312BF233F58A /* Pods-linjinsuo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-linjinsuo.release.xcconfig"; path = "Pods/Target Support Files/Pods-linjinsuo/Pods-linjinsuo.release.xcconfig"; sourceTree = "<group>"; };
 		660F0981089280D2FD44FD9C /* Pods-linjinsuo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-linjinsuo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-linjinsuo/Pods-linjinsuo.debug.xcconfig"; sourceTree = "<group>"; };
+		7D7342CC275AF3C500A8929F /* YCMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMenuView.h; sourceTree = "<group>"; };
+		7D7342CD275AF3C500A8929F /* YCMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMenuView.m; sourceTree = "<group>"; };
+		7D7342CF275AF3FC00A8929F /* MenuListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuListVC.h; sourceTree = "<group>"; };
+		7D7342D0275AF3FC00A8929F /* MenuListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuListVC.m; sourceTree = "<group>"; };
+		7D7342D1275AF3FC00A8929F /* MenuListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuListVC.xib; sourceTree = "<group>"; };
 		8414DB32205208CA0060FFD7 /* NoDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoDataView.h; sourceTree = "<group>"; };
 		8414DB33205208CA0060FFD7 /* NoDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoDataView.m; sourceTree = "<group>"; };
 		84191B95205750F600DBA00F /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
@@ -1332,6 +1340,26 @@
 			path = "tableview空数据提示";
 			sourceTree = "<group>";
 		};
+		7D7342CA275AF36100A8929F /* 指定UI下拉列表 */ = {
+			isa = PBXGroup;
+			children = (
+				7D7342CB275AF3C500A8929F /* MenuView */,
+				7D7342CF275AF3FC00A8929F /* MenuListVC.h */,
+				7D7342D0275AF3FC00A8929F /* MenuListVC.m */,
+				7D7342D1275AF3FC00A8929F /* MenuListVC.xib */,
+			);
+			path = "指定UI下拉列表";
+			sourceTree = "<group>";
+		};
+		7D7342CB275AF3C500A8929F /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				7D7342CC275AF3C500A8929F /* YCMenuView.h */,
+				7D7342CD275AF3C500A8929F /* YCMenuView.m */,
+			);
+			path = MenuView;
+			sourceTree = "<group>";
+		};
 		8414DB31205208CA0060FFD7 /* EmptyView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1511,6 +1539,7 @@
 		8457D7A0204F750D002FF42A /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				7D7342CA275AF36100A8929F /* 指定UI下拉列表 */,
 				0433D03C225C8D0300DAFF2E /* PPMaker快速创建UI链式创建 */,
 				04B2295F2252EB72004C8E94 /* RAC的使用 */,
 				049D5FA72244677B00B5D5F1 /* iOS检测更新 */,
@@ -1826,6 +1855,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1895,6 +1925,7 @@
 				04B229642252EBF7004C8E94 /* RACViewController.xib in Resources */,
 				04497F0D21AE60B8008017DC /* 5.png in Resources */,
 				0406B83D21815E4D006CED81 /* clipPhoto@2x.png in Resources */,
+				7D7342D3275AF3FC00A8929F /* MenuListVC.xib in Resources */,
 				04E49DC121816C990092AFB9 /* Qcodesound.caf in Resources */,
 				0406B83C21815E4D006CED81 /* clipPhoto@3x.png in Resources */,
 				04E49DBB21816C990092AFB9 /* line@3x.png in Resources */,
@@ -2052,6 +2083,7 @@
 				04497EF121AE5CE9008017DC /* XLImageViewer.m in Sources */,
 				04D33A4921C25D4000E597DE /* Model.m in Sources */,
 				0449201521AD27C60027D5D6 /* XLFormDescriptor.m in Sources */,
+				7D7342D2275AF3FC00A8929F /* MenuListVC.m in Sources */,
 				04B229632252EBF7004C8E94 /* RACViewController.m in Sources */,
 				852C383D207B5AB70088A812 /* UIView+Tap.m in Sources */,
 				0449201321AD27C60027D5D6 /* XLFormSectionDescriptor.m in Sources */,
@@ -2121,6 +2153,7 @@
 				8532875E2071CD39008C7A14 /* BaseTabViewController.m in Sources */,
 				04323688218AEE620049C358 /* AssetsTableViewDataSource.m in Sources */,
 				0452FB0821B517BF000D8F6F /* TextViewFormCell.m in Sources */,
+				7D7342CE275AF3C500A8929F /* YCMenuView.m in Sources */,
 				04323694218BF0630049C358 /* SingleVC.m in Sources */,
 				8588EAAA2080518A00C6FD16 /* UIButton+touch.m in Sources */,
 				843D6E82204FCD1A004AC950 /* AssetsListViewController.m in Sources */,
