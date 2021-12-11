@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>zcjNetWorkJson</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[[HDNetworking sharedHDNetworking] jsonNetworkRequestWithMethod:PutType urlString:strURL withParameter:dicPar status:@"0" success:^(id  _Nonnull responseObject) {
+    [ws pop];
+} failure:^(NSError * _Nonnull error) {
+    
+}];
+    </string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9E6D6BB2-3117-4866-8B8F-49A996AB2521</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>网络请求json</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

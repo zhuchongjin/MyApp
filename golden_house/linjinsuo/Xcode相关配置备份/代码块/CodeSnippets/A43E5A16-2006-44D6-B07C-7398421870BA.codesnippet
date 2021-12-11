@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>iOS13UISegmentedControl</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    self.segment.selectedSegmentIndex = 0;
+    if (DeviceSystemVersion.doubleValue &gt;= 13.0) {
+//        UIColor *tintColor = [self tintColor];
+            UIImage *tintColorImage = [self imageWithColor:CJButtonColor];
+            // Must set the background image for normal to something (even clear) else the rest won't work
+            [self.segment setBackgroundImage:[self imageWithColor:self.segment.backgroundColor ? self.segment.backgroundColor : [UIColor clearColor]] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+            [self.segment setBackgroundImage:tintColorImage forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+            [self.segment setBackgroundImage:[self imageWithColor:[CJButtonColor colorWithAlphaComponent:0.2]] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+            [self.segment setBackgroundImage:tintColorImage forState:UIControlStateSelected|UIControlStateSelected barMetrics:UIBarMetricsDefault];
+            [self.segment setTitleTextAttributes:@{NSForegroundColorAttributeName: CJWhiteColor, NSFontAttributeName: [UIFont systemFontOfSize:13]} forState:UIControlStateSelected];
+            [self.segment setTitleTextAttributes:@{NSForegroundColorAttributeName: CJButtonColor, NSFontAttributeName: [UIFont systemFontOfSize:13]} forState:UIControlStateNormal];
+            [self.segment setDividerImage:tintColorImage forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+            self.segment.layer.borderWidth = 0.5;
+            self.segment.layer.borderColor = [CJButtonColor CGColor];
+    }else{
+           self.segment.tintColor = CJButtonColor;
+    }
+    </string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A43E5A16-2006-44D6-B07C-7398421870BA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UISegmentedControl iOS13以上的适配</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

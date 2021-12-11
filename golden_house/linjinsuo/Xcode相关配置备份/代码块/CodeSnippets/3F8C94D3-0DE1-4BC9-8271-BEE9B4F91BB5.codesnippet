@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>zcjAlertView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    CJAlertView *alert = [[CJAlertView alloc]initWithTitle:@"&lt;#删除提醒#&gt;" strContent:@"&lt;#删除提醒#&gt;" ClickOnSure:^(NSString * _Nonnull strSure) {
+        DLog(@"--------");
+    } ClickOnCancle:^(NSString * _Nonnull strCancle) {
+        DLog(@"-=-=-=-=");
+    }];
+    
+    alert.center = KEYWINDOW.center;
+    WLAlertView * alertView = [[WLAlertView alloc]init];
+    alertView.containerView = alert;
+    alertView.isTouchOtherUndissmiss=YES;
+    [alertView show];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3F8C94D3-0DE1-4BC9-8271-BEE9B4F91BB5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>网络货运平台提示</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>swiftNetWork</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>var dict:[String : Any] = [:];
+dict["password"] = self.fieldPW.text;
+dict["phone"] = self.fieldAccount.text;
+
+Network.request(self, index: 1, target: Httpbin.driverLogin(dict: dict as NSDictionary), success: { (json) in
+    
+    print("driverLogin  \(json)")
+    
+    let returnCode:String = json["returnCode"].string!
+    let message:String = json["message"].string!
+    
+    if returnCode == "SUCCESS"{
+        
+        if let dic2 = json["obj"].dictionaryObject{
+            
+            
+            CJArchive.setSaveLogInData(dict: dic2 as NSDictionary)
+        }
+        
+        print("+++++++++  \(CJArchive.getLogInUserCode())")
+        
+        DLog(message: "DLog==输出 \(CJArchive.getLogInUserCode())");
+        
+        self.pop()
+    }else{
+        CJAlert.showStringDismiss(withDelay: message)
+    }
+    
+}, error: { (error) in
+
+    
+}) { (fail) in
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>373B3AED-7AD4-4B8A-BB58-A41442D9EA8E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Mayo 网络请求</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>swifth网络请求</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

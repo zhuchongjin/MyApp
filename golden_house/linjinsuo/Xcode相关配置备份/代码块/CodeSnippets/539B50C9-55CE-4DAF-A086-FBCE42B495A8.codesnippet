@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>zcjNetWork</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    NSString *strUrl = CJStringWithFormat(@"%@&lt;#/ntocc-tms-api/orderDetail/receive#&gt;",CJBaseUrl);
+    NSDictionary *dic = @{
+        @"code":&lt;#model.code#&gt;
+    };
+    
+    WS(ws);
+   [[HDNetworking sharedHDNetworking] &lt;#POST#&gt;:strUrl parameters:dic status:@"" success:^(id  _Nonnull responseObject) {
+        
+        
+    } failure:^(NSError * _Nonnull error) {
+        
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>539B50C9-55CE-4DAF-A086-FBCE42B495A8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>zcjNetWork</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>网络请求post</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

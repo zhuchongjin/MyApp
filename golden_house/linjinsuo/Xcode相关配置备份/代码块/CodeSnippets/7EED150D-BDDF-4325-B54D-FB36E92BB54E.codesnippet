@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>zcjnotccAlertview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    CJAlertView *alert = [[CJAlertView alloc]initWithTitle:@"退出登录" strContent:@"您确定要退出么？" ClickOnSure:^(NSString * _Nonnull strSure) {
+        [ws logInOut];
+    } ClickOnCancle:^(NSString * _Nonnull strCancle) {
+
+    }];
+    alert.center=self.view.center;
+    WLAlertView * alertView = [[WLAlertView alloc]init];
+    alertView.containerView = alert;
+    alertView.isTouchOtherUndissmiss = YES;
+    [alertView show];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7EED150D-BDDF-4325-B54D-FB36E92BB54E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>网络货运提示</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

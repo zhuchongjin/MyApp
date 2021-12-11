@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>zcjTabViewLoadMore</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
+    [self setTitleName:CJLString(@"机构")];
+    [self setBackLeftButton:@""];
+
+    
+    &lt;UITableViewDelegate,UITableViewDataSource&gt;
+    @property (nonatomic,strong) CJTableView *tableView;
+    @property (nonatomic,strong) NSMutableArray *modelArray;
+    @property (nonatomic,strong) NSString *refreshType; //刷新
+    @property (nonatomic,readwrite) int page;
+    @property (nonatomic,strong) InstitutionsTypeCell *institutionsTypeCell;
+    
+    self.institutionsTypeCell = [[InstitutionsTypeCell alloc]initWithFlex:nil reuseIdentifier:nil];
+    [self.view addSubview:self.tableView];
+    WS(ws);
+    self.tableView.placeHolderView = [[KKTableViewNoDataView alloc] initWithFrame:self.tableView.bounds image:[UIImage imageNamed:@"no_data"] viewClick:^{
+           [ws.tableView.mj_header beginRefreshing];
+    }];
+    [self initData];
+    [self loadData];
+}
+
+- (void)initData{
+    self.modelArray = [[NSMutableArray alloc]init];
+    self.page = 1;
+}
+
+/// &lt;#Description#&gt;
+- (void)loadData {
+
+    NSString *strURL = CJStringWithFormat(@"%@/ntocc-basic-api/partyGroup/queryListByParent",CJBaseURL);
+    NSDictionary *dicPar = @{@"pageNum":CJStringWithFormat(@"%d",self.page),
+                             @"pageSize":@"10",
+                             @"parentCode":[CJControl getBranchCode]
+    };
+    
+    WS(ws);
+    [[HDNetworking sharedHDNetworking] GET:strURL parameters:dicPar success:^(id  _Nonnull responseObject) {
+        
+        DLog(@"++++++++%@",responseObject);
+        
+        NSArray *list = responseObject[@"records"];
+        NSString *total = CJStringWithFormat(@"%@",responseObject[@"total"]);
+        if (list.count &gt; 0) {
+            //            #import "CommonRouteModel.h"
+            if ([ws.refreshType isEqualToString:@"down"]) {
+                [ws.modelArray removeAllObjects];
+            }
+
+            NSError * error ;
+            NSArray *arr = [InstitutionsTypeModel arrayOfModelsFromDictionaries:list error:&amp;error];
+            [ws.modelArray addObjectsFromArray:arr];
+            [ws.tableView.mj_header endRefreshing];
+            [ws.tableView.mj_footer endRefreshing];
+
+            if (ws.modelArray.count == total.intValue) {
+                [ws.tableView.mj_footer endRefreshingWithNoMoreData];
+            }
+
+        }else{
+
+            [ws.tableView.mj_header endRefreshing];
+            [ws.tableView.mj_footer endRefreshingWithNoMoreData];
+        }
+        
+        [ws.tableView reloadData];
+        
+    } failure:^(NSError * _Nonnull error) {
+        DLog(@"++++++++%@",error);
+        
+    }];
+
+}
+
+- (void)downRefresh{
+    self.refreshType = @"down";
+    self.page = 1;
+    [self loadData];
+}
+
+- (void)upRefresh{
+    self.refreshType = @"up";
+    self.page ++;
+    [self loadData];
+}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.modelArray.count;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    static NSString *identifier = @"MyEvaluationCell";
+//    MyEvaluationCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+//    if (cell == nil) {
+////        cell = [[AppectGroupCell alloc] initWithFlex:nil reuseIdentifier:identifier];
+////        cell = [[[NSBundle mainBundle] loadNibNamed:@"MyEvaluationCell" owner:nil options:nil] firstObject];
+//        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+//    }
+        static NSString *identifier = @"InstitutionsTypeCell";
+        InstitutionsTypeCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+        if (cell == nil) {
+            cell = [[InstitutionsTypeCell alloc] initWithFlex:nil reuseIdentifier:identifier];
+    //        cell = [[[NSBundle mainBundle] loadNibNamed:@"MyEvaluationCell" owner:nil options:nil] firstObject];
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        }
+    
+    InstitutionsTypeModel *model = self.modelArray[indexPath.row];
+    [cell setCellInfoWithModel:model];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if (self.blockSelect) {
+        self.blockSelect(@"");
+        [self pop];
+    }
+}
+
+- (CJTableView *)tableView{
+    if (!_tableView) {
+        _tableView = CJTableView.tbInitFrameStyle(CGRectMake(0, kTopHeight + CJTableToTopHeight, SCREEN_WIDTH, SCREEN_HEIGHT-kTopHeight  - CJTableToTopHeight),UITableViewStylePlain)
+        .tbDelegate(self)
+        .tbDataSource(self)
+        .tbSetOther(YES)
+        .tbEstimatedRowHeight(YES)
+        .tbMjHeadFooter(YES)
+        ;
+        WS(ws);
+        _tableView.blockMjHeader = ^(BOOL isheader) {
+            
+            if (isheader) {
+                [ws downRefresh];
+            } else {
+                [ws upRefresh];
+            }
+        };
+    }
+    return _tableView;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0A5D600E-A5C1-440B-8C1F-221054B54BA6</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>tableview带加载</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
